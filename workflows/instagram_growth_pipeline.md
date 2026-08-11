@@ -30,15 +30,45 @@ this section to point at the new source of truth.
 1. **AI Reimagines [Era/Genre]** — Reel cutdowns of the original AI-music
    format locked for the YouTube channel
    (`../Youtube Content Agent/workflows/daily_script_pipeline.md`), captioned
-   in the long narrative style @evolving.ai uses
+   in the long narrative style @evolving.ai uses. Model: PixVerse V6 for
+   the visual (silent) + `tools/generate_music.py` for the song, combined
+   in a video editor — see "Video model selection" below.
 2. **AI Pop-Culture Reimagining** — anime/movie/game moments remade with AI
-   video, emoji hook + branded follow-CTA (@airesearches style)
+   video, emoji hook + branded follow-CTA (@airesearches style). Model:
+   **Kling 3 Omni** (default as of 2026-08-11) — better physics/cinematic
+   fidelity for era-mashup/epic content than PixVerse.
 3. **AI Hip-Hop/Influencer Content** — AI-generated rap/performance content
-   with a consistent persona, comment-to-DM lead magnet (@mrbankzzzz style)
+   with a consistent persona, comment-to-DM lead magnet (@mrbankzzzz style).
+   Model: Kling 3 Omni with `generateSound: true` when dialogue/vocals
+   are needed.
 4. **Tool-Drop Reactive Content** — same-day Reels riding newly launched AI
-   video tools/models (@kayo style) — requires watching AI tool release news
+   video tools/models (@kayo style) — requires watching AI tool release news.
+   Model: **Kling 3 Omni** (default as of 2026-08-11), same reasoning as
+   Pillar 2.
 5. **AI Dance/Character** — a recurring AI-generated persona in dance or
-   crossover content, cross-postable with any future TikTok relaunch
+   crossover content, cross-postable with any future TikTok relaunch.
+   Model: PixVerse V6 (cheap, fast, proven for stylized motion — no need
+   for Kling's extra fidelity/cost/time here).
+
+## Video model selection (updated 2026-08-11)
+Researched the current AI video landscape for cheapest-vs-highest-quality
+(see sources logged in conversation, not repeated here). Within OpenArt
+(already a paid subscription, so this is a model choice, not a platform
+migration):
+- **PixVerse V6** — cheapest, fastest (~40-60s/clip), best for
+  high-volume stylized/anime motion. Default for Pillars 3 (visual
+  half) and 5.
+- **Kling 3 Omni** — near-frontier quality (#4 on the Artificial
+  Analysis ELO leaderboard), best-in-class physics for cinematic/epic
+  content, noticeably slower (~2-3 min/clip in testing vs PixVerse's
+  ~1 min) and pricier per clip. Default for Pillars 2 and 4.
+- **Seedance 2.0** — highest raw quality/character-consistency (#1 ELO),
+  reserve for cases where that specifically matters enough to justify
+  the added cost/time over Kling.
+- Considered switching to a cheaper aggregator (fal.ai) for the same
+  underlying models instead of OpenArt's markup, but not worth it while
+  the OpenArt subscription is already paid for — revisit if that
+  changes.
 
 ## Daily trending songs (genre-mixed)
 Replaces the one-time "growth strategy doc" step in the day-to-day
