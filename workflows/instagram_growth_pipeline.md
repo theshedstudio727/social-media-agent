@@ -40,6 +40,22 @@ this section to point at the new source of truth.
 5. **AI Dance/Character** — a recurring AI-generated persona in dance or
    crossover content, cross-postable with any future TikTok relaunch
 
+## Daily trending songs (genre-mixed)
+Replaces the one-time "growth strategy doc" step in the day-to-day
+pipeline — instead of re-writing strategy daily, pull a fresh top-5
+trending-songs snapshot each run for trend awareness. Pull from a public
+chart (e.g. kworb.net's Spotify daily global chart) and select **one pick
+per distinct genre lane**, not the raw top 5 — the raw top of most charts
+skews heavily toward pop/mainstream, which biases every downstream
+decision toward one genre if used as-is. Write the result to
+`content/trending_audio/YYYY-MM-DD.md`.
+
+This is trend-awareness input only, not a source of audio to embed
+directly — the copyright/likeness guardrail still applies: never use a
+specific existing song in generated content without legal sign-off. Use
+it to judge which pillar/format is timely, not as a track to license or
+rip.
+
 ## Cadence
 1 Reel per day minimum (solo capacity). Stories are for retention with
 existing followers, not discovery — don't count them toward the daily
