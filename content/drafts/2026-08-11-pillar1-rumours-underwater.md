@@ -1,4 +1,4 @@
-# 2026-08-11 — Pillar 1: AI Reimagines [Era/Genre]
+# 2026-08-11 — Pillar 1: AI Reimagines [Era/Genre] (RENDERED)
 
 **Title:** AI Reimagines: Rumours-Era Fleetwood Mac, But It Never Left the Water
 
@@ -9,8 +9,10 @@ What if the warm, golden Rumours-era sound never left dry land — it drowned in
 
 Follow @the_shedstudio for the next one.
 
-**Production Notes:** Original AI-composed track in Rumours-era soft-rock style (analog synths, warm vocal harmonies) + underwater visual staging with bioluminescent lighting, kelp-forest set dressing, drifting-silhouette performer. Needs synced original audio, not just silent motion — use an audio *element* input (the generated track), not text2video alone.
+**Production Notes:** Original AI-composed song ("Underwater Gold") + separately-generated underwater visual clip. These are combined in a standard video editor (trim song to Reel length, lay under the clip) — OpenArt's video models don't do full-song audio-to-video sync in one call, their "audio element" support is only for short 2-15s voice/dialogue clips (lip-sync), not a ~4-minute song bed. Correcting the earlier assumption in this file.
 
-**Model:** Kling 3 Omni (element2video, `generateSound: true`) or Seedance 2.0 (element2video with an audio element) — **exception to the PixVerse-V6-default rule**: this pillar's whole premise is an original song, so it needs a model that accepts an audio element and can sync visuals to it. PixVerse V6 has no audio-element mode, so it doesn't fit here despite being the usual cost default.
+**Assets:**
+- Song: "Underwater Gold" (Suno v4.5+ via Apiframe) — https://cdn2.apiframe.ai/audio/933954f3-f139-4f17-ac37-729c91c7d95f-0.mp3
+- Visual: PixVerse V6, text2video, 720p, 9:16, 5s, silent — https://cdn.openart.ai/openart-ai/production/2026-08/create-video/9e1JNe5b3ybFNQwq1Rct/61eb7796-8ae9-4e05-9335-010bd43e5fe9_seed1733721482_1786439279302_29dfdd94.mp4
 
-**Status:** Pending (would be pushed to Autosheet "Shed Studio - Instagram Content Approval" — **skipped this run, see note below**)
+**Status:** Rendered (both components) — combine song + clip in a video editor, then post manually to Instagram.

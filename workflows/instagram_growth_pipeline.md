@@ -86,6 +86,12 @@ without legal sign-off. Applies most to Pillar 3.
 - `tools/create_google_doc.py` — deliverable output (OAuth via
   `tools/google_auth.py`, credentials copied from Youtube Content Agent
   on 2026-08-10)
+- `tools/generate_music.py` — original AI song generation for Pillar 1,
+  via the Apiframe v2 Suno wrapper (`APIFRAME_API_KEY` in `.env`). Suno
+  itself has no public API as of 2026-08, this is a third-party wrapper.
+  Use with `mcp__openart__openart_generate_video` (PixVerse V6, silent)
+  for the visual half — combine the two in a standard video editor, see
+  the "Edge cases" note below on why they can't be generated as one call.
 
 ## Posting (currently manual)
 No Instagram upload/scheduling tool exists yet. Publishing is manual until
@@ -126,11 +132,25 @@ but still an external dependency on completing Meta's app review before
   the channel is on the watchlist and `channel_recap` can already see it
   (71 followers). Being watchlisted isn't the same as being "verified" for
   personal analytics — there's a separate verification step not yet done.
-- 2026-08-11: Pillar 1 (AI Reimagines [Era/Genre]) needs an OpenArt model
-  that accepts an audio *element* (the AI-generated song) and syncs video
-  to it — PixVerse V6 (the usual cost default) has no audio-element mode,
-  so Kling 3 Omni or Seedance 2.0 (element2video, audio element) is the
-  right pick for this pillar specifically, not the default.
+- 2026-08-11 (correction, see below for what actually works): initially
+  assumed Kling 3 Omni / Seedance 2.0's audio-element support could sync
+  a full song to video in one call. It can't — that audio-element feature
+  is for short 2-15s voice/dialogue clips (lip-sync), not a ~4-minute
+  song bed. Kling 3 Omni's `visualReferences` doesn't even accept a
+  generic audio type at all (only image/character/element refs with an
+  optional short character *voice* clip). For Pillar 1: generate the song
+  and the visual separately, combine in a standard video editor. PixVerse
+  V6 (silent, text2video) is fine for the visual half after all.
+- 2026-08-11: added `tools/generate_music.py` for Pillar 1's original
+  songs, via Apiframe's v2 Suno API. Key detail: an API key starting
+  with `afk_` is v2 — use `https://api.apiframe.ai/v2`, NOT the older
+  `https://api.apiframe.pro` v1 endpoints (hitting v1 with a v2 key
+  returns a 400 that helpfully names the correct base URL). v2 flow:
+  `POST /v2/music/generate` with `{"prompt", "model": "suno",
+  "sunoParams": {"model_version", "style", "custom_mode", "title",
+  "instrumental"}}` → returns `jobId`; poll `GET /v2/jobs/{jobId}` until
+  `status: "COMPLETED"`, audio URL at `result.tracks[0].audioUrl`. Suno
+  itself still has no public API — this is a paid third-party wrapper.
 - 2026-08-11: the cloud routine (`trig_0184eQthhejdSKjd6yboX5fz`) has been
   unreliable/opaque to debug — the RemoteTrigger API exposes zero run
   output/logs, only routine config. A full pipeline run and an isolated
