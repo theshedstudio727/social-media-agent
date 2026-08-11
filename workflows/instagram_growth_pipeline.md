@@ -78,9 +78,12 @@ the Content Publishing API path below is built out.
 **Requirements to automate:**
 1. Instagram Business/Creator account linked to a Facebook Page — already
    satisfied, @the_shedstudio is a Business account ("The Shed Studio LLC")
-2. A Meta app requesting `instagram_basic` and `instagram_content_publish`
-   permissions
-3. Meta App Review (2-4 weeks) for production access beyond 25 test users
+2. A Meta app requesting `instagram_business_content_publish` (the current
+   permission name - `instagram_content_publish` was the older name)
+3. Meta App Review (2-4 weeks) for production access beyond 25 test users -
+   **app created and submitted for review on 2026-08-11**, waiting on
+   Meta's decision. Once an access token exists, build
+   `tools/post_to_instagram.py` against step 4 below.
 4. Once approved: publishing is a two-step Graph API call — POST a media
    container to `/{ig-user-id}/media`, then publish via
    `/{ig-user-id}/media_publish`. Limits: 25 published posts/24hr (Reels
@@ -102,3 +105,24 @@ but still an external dependency on completing Meta's app review before
   TikTok rewards minimal hashtag-only captions, Instagram rewards long
   narrative captions. Don't reuse TikTok captions verbatim if TikTok work
   resumes later.
+- 2026-08-11: `get_personal_analytics` for @the_shedstudio still returns
+  `report_state: "initializing"` / "No verified channels yet" even though
+  the channel is on the watchlist and `channel_recap` can already see it
+  (71 followers). Being watchlisted isn't the same as being "verified" for
+  personal analytics — there's a separate verification step not yet done.
+- 2026-08-11: Pillar 1 (AI Reimagines [Era/Genre]) needs an OpenArt model
+  that accepts an audio *element* (the AI-generated song) and syncs video
+  to it — PixVerse V6 (the usual cost default) has no audio-element mode,
+  so Kling 3 Omni or Seedance 2.0 (element2video, audio element) is the
+  right pick for this pillar specifically, not the default.
+- 2026-08-11: the cloud routine (`trig_0184eQthhejdSKjd6yboX5fz`) has been
+  unreliable/opaque to debug — the RemoteTrigger API exposes zero run
+  output/logs, only routine config. A full pipeline run and an isolated
+  Autosheet-only smoke test both sat for 10-70+ minutes with no observable
+  commit. OpenArt (`mcp__openart__*`) and Sandcastles were confirmed
+  working when called directly/locally, so the cloud environment or the
+  Autosheet connector specifically is the leading suspect — unconfirmed,
+  since the claude.ai UI (the only place with real logs) wasn't checked
+  during this session. This run was done manually/locally instead as a
+  workaround; Autosheet and Gmail steps were skipped since those
+  connectors aren't available outside the cloud routine.
