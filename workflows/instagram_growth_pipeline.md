@@ -240,3 +240,25 @@ but still an external dependency on completing Meta's app review before
   watchlisted — the personal-analytics verification step for
   @the_shedstudio is still stuck; worth flagging to the human directly
   since it blocks any real performance tracking against the 10K goal.
+- 2026-08-25: found that the prior run's last 3 commits (`788409e`,
+  `434c463`, `2c7e56d` — the Pillar 3 draft file, the auth-outage note,
+  and the sheet-location doc) had been made on a detached HEAD, not
+  `main`, and were never merged/pushed — `main` on origin was still 3
+  commits behind and those commits were at risk of garbage collection.
+  Fast-forwarded `main` to recover them before doing anything else this
+  run. Cause not confirmed, but worth checking on future runs: always
+  verify `git status`/`git branch` shows an attached branch (not
+  "HEAD detached") before committing, and `git checkout main` first if
+  detached.
+- 2026-08-25: OpenArt's model catalog (`openart_model_list`) now lists
+  Seedance 2.5, not just the 2.0 line documented above — newest Seedance,
+  single-shot clips up to 30s with a much larger reference budget (30
+  images/10 videos/10 audios) for multi-shot storytelling in one
+  continuous take, synced audio/dialogue included, but capped at 1080p
+  (use Seedance 2.0 instead when a shot specifically needs 4K). Used this
+  for a Pillar 4 (Tool-Drop Reactive) draft reacting to the model's own
+  release, overriding that pillar's usual Kling 3 Omni default since the
+  hook depends on this specific new capability. Also confirmed
+  `get_personal_analytics` is still empty for @the_shedstudio and the
+  Autosheet 'Content' tab still had no Approved rows awaiting render —
+  Part A had nothing to render/email this run.
