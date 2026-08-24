@@ -207,3 +207,20 @@ but still an external dependency on completing Meta's app review before
   during this session. This run was done manually/locally instead as a
   workaround; Autosheet and Gmail steps were skipped since those
   connectors aren't available outside the cloud routine.
+- 2026-08-24: scheduled cloud run hit `GOOGLE_AUTH_REQUIRED` /
+  "Autosheet was disconnected" (HTTP 403) on every
+  `autosheet_start_agent_google_sheets_spreadsheet` call, including on
+  retry — the Autosheet connector's Google OAuth had lapsed and needs a
+  human to reconnect it (claude.ai connector settings), not something
+  fixable from inside the run. This blocked Part A entirely (couldn't
+  read Approved/Video-URL status, so no renders or review emails were
+  attempted) and Part B step 5 (couldn't append the new draft row). Did
+  Part B steps 1-4 and 6 anyway (drafted content, wrote the file, updated
+  this log) so the day's draft isn't lost, and flagged the row as
+  needing manual sheet entry once Autosheet is reconnected. Also
+  confirmed `get_personal_analytics` for @the_shedstudio is still
+  returning empty `stats`/`charts`/`recent_videos` two weeks after the
+  2026-08-11 note above — the "verified channel" step for personal
+  analytics still hasn't happened; `ping` still succeeds, so the
+  Sandcastles connector itself is fine, it's specifically this account's
+  verification that's stuck.
