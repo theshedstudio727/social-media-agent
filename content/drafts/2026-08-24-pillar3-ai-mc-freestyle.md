@@ -13,4 +13,4 @@ Follow @the_shedstudio to watch the character get built out, one bar at a time.
 
 **Model:** Kling 3 Omni, `generateSound: true` (short synced vocal clip — see 2026-08-11 edge case: audio-element support is for short dialogue/vocal clips, not a full song bed).
 
-**Status:** Pending — awaiting human approval in the Autosheet content sheet before rendering. NOTE: could not be appended to the Autosheet sheet on 2026-08-24 due to a Google auth disconnection on the Autosheet connector (see workflow edge cases) — needs to be added to the sheet manually or on the next successful run.
+**Status:** Pending — awaiting human approval in the Autosheet content sheet before rendering. Backfilled into the Autosheet sheet (row 2) on a later 2026-08-24 run once the Autosheet connector's Google auth was reconnected.

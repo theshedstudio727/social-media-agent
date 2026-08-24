@@ -224,3 +224,19 @@ but still an external dependency on completing Meta's app review before
   analytics still hasn't happened; `ping` still succeeds, so the
   Sandcastles connector itself is fine, it's specifically this account's
   verification that's stuck.
+- 2026-08-24 (later run, same day): Autosheet reconnected successfully —
+  `autosheet_start_agent_google_sheets_spreadsheet` worked on the first
+  call, no `GOOGLE_AUTH_REQUIRED` this time, confirming that outage was
+  the connector's OAuth lapsing (as suspected) and not anything wrong
+  with the sheet ID/structure. The `Content` tab had zero data rows
+  (header only) even though this account is 2 weeks into the plan —
+  confirms no row had ever successfully been appended before this run.
+  Backfilled the earlier same-day Pillar 3 draft (which failed to append
+  during the outage) into row 2 instead of drafting a second new concept
+  for the same calendar day, to avoid two Pending drafts dated the same
+  day and to keep the 5-pillar rotation accurate (Pillar 3 was already
+  used today). `get_personal_analytics` still returns empty
+  stats/charts/recent_videos two weeks after the account was
+  watchlisted — the personal-analytics verification step for
+  @the_shedstudio is still stuck; worth flagging to the human directly
+  since it blocks any real performance tracking against the 10K goal.
