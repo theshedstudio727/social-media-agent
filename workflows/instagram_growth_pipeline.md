@@ -26,6 +26,21 @@ this pipeline proceeds on Instagram first.
 If the niche or pillars change, update the Google Doc first, then update
 this section to point at the new source of truth.
 
+## Content approval sheet
+
+The Autosheet 'Shed Studio - Instagram Content Approval' sheet (referenced
+in the daily routine prompt) is this Google Sheet, business account
+(`theshedstudio727@gmail.com`), tab `Content`:
+https://docs.google.com/spreadsheets/d/1AaUO3Cj0Ypi0Ghbr6f1X1VxZwuceTn58vqBuRCAe8O8/edit
+
+Columns: Date, Pillar, Title, Hook, Caption, Production Notes, Model,
+Status, Video URL, Notes. Status flow: "Pending" (default, set when
+drafting) → "Approved" (set by the human) → "Rendered" (set once rendered
+and emailed for review). Created 2026-08-23 after two consecutive runs
+(08-22, 08-23) failed at Part A with no spreadsheet ID stored anywhere
+reachable — this line is now that source of truth. Update it here first
+if the sheet is ever recreated.
+
 ## Content pillars (rotate across the week)
 1. **AI Reimagines [Era/Genre]** — Reel cutdowns of the original AI-music
    format locked for the YouTube channel
