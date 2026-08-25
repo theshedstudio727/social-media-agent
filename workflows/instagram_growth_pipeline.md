@@ -262,3 +262,19 @@ but still an external dependency on completing Meta's app review before
   `get_personal_analytics` is still empty for @the_shedstudio and the
   Autosheet 'Content' tab still had no Approved rows awaiting render —
   Part A had nothing to render/email this run.
+- 2026-08-25 (second run, same calendar `currentDate`): the prior run's
+  commit (`969cff1`) was already timestamped 2026-08-24 in git but titled
+  for "2026-08-25" content — the routine's wall-clock and the
+  `currentDate` context value it's given can disagree near day
+  boundaries. Since a Pending row for 2026-08-25 (Pillar 4) already
+  existed in the sheet and its draft file was already committed, this
+  run treated that as "today already handled" and drafted for
+  2026-08-26 (Pillar 1) instead of overwriting/duplicating the same-day
+  slot. Rule of thumb going forward: before drafting, check both
+  `content/drafts/` *and* the Autosheet sheet for a row dated
+  `currentDate` — if one already exists, draft for the next calendar day
+  instead of creating a same-day duplicate. Still nothing Approved in
+  the sheet, so Part A had nothing to render/email again this run;
+  `get_personal_analytics` still returns empty stats — worth escalating
+  to the human directly since it's now been 2 weeks with no personal
+  analytics verification.
