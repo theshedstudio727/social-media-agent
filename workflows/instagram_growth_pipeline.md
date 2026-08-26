@@ -278,3 +278,26 @@ but still an external dependency on completing Meta's app review before
   `get_personal_analytics` still returns empty stats — worth escalating
   to the human directly since it's now been 2 weeks with no personal
   analytics verification.
+- 2026-08-26: found the repo on a **detached HEAD** again at the start of
+  the run, same class of issue as 2026-08-25's note above, despite that
+  entry's "always verify before committing" rule of thumb — this time the
+  detached commit (`2e587b1`, the 2026-08-26 Pillar 1 draft + the prior
+  edge-case note) turned out to already be fast-forwardable onto `main`
+  and was *already pushed to `origin/main`* even though the local branch
+  ref hadn't moved. So the underlying cause isn't "work gets lost," it's
+  that whatever checks out the repo at the start of a run doesn't always
+  leave `main` checked out/up to date with what a previous run in the same
+  session actually pushed — a local `git status`/`git branch` check alone
+  can under-report progress already on `origin/main`. Revised rule of
+  thumb: at the start of every run, before assuming anything is missing,
+  run `git fetch origin main` and compare against both local HEAD and
+  `origin/main`, not just local HEAD — a detached HEAD may already be an
+  ancestor-safe fast-forward, and `origin/main` may already be ahead of
+  what a plain `git status` implies. Confirmed nothing new was lost this
+  time. Also confirmed again this run: all 3 sheet rows (2026-08-24,
+  2026-08-25, 2026-08-26) are still `Pending` with no `Approved` rows, so
+  Part A had nothing to render/email; a draft already existed for
+  2026-08-26 (title, sheet row, and commit all present), so Part B needed
+  no new draft this run either. `get_personal_analytics` still returns
+  empty stats/charts/recent_videos — now 2+ weeks stuck on the same
+  verification gap, still worth a direct human escalation.
