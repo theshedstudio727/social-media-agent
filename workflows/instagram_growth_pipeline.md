@@ -301,3 +301,18 @@ but still an external dependency on completing Meta's app review before
   no new draft this run either. `get_personal_analytics` still returns
   empty stats/charts/recent_videos — now 2+ weeks stuck on the same
   verification gap, still worth a direct human escalation.
+- 2026-08-27: repo was again on a **detached HEAD** at run start, this
+  time correctly ancestor-safe (`origin/main` was 2 commits ahead of the
+  local `main` ref) — followed the 2026-08-26 rule of thumb
+  (`git fetch origin main`, compare, `git checkout main` +
+  `git merge --ff-only origin/main`) and it resolved cleanly in one step.
+  Confirms that rule of thumb works; keep applying it every run. Also:
+  `get_personal_analytics` for @the_shedstudio still returns entirely
+  empty `stats`/`charts`/`recent_videos` — this is now **17 days**
+  (since 2026-08-10 baseline) with the personal-analytics verification
+  step stuck, meaning there has been zero real follower/performance data
+  for this entire pipeline against a 30-day goal that's now over halfway
+  through its window. Escalating this directly to the human rather than
+  just logging it again. Still nothing `Approved` in the Autosheet sheet
+  (3 `Pending` rows: 08-24, 08-25, 08-26), so Part A had nothing to
+  render/email this run either.
