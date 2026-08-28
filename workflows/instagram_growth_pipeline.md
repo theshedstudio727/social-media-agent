@@ -316,3 +316,22 @@ but still an external dependency on completing Meta's app review before
   just logging it again. Still nothing `Approved` in the Autosheet sheet
   (3 `Pending` rows: 08-24, 08-25, 08-26), so Part A had nothing to
   render/email this run either.
+- 2026-08-28: repo was found on a **detached HEAD** yet again at run
+  start, same pattern as 08-25/08-26/08-27 — this confirms it's not a
+  one-off but a consistent property of whatever checks out the repo for
+  each cloud run. It was again an ancestor-safe fast-forward
+  (`origin/main` 3 commits ahead of local `main`), resolved cleanly with
+  the standing rule of thumb. Given four runs in a row have hit this,
+  treat "detached HEAD, ancestor-safe fast-forward available" as the
+  expected start state, not an anomaly — just apply the fetch/compare/
+  checkout/ff-only-merge sequence automatically before touching anything
+  else, without re-diagnosing it as a surprise each time. Still nothing
+  `Approved` in the Autosheet sheet this run (5 `Pending` rows: 08-24
+  through 08-27, plus the new 08-28 row), so Part A had nothing to
+  render/email again — this pipeline has now gone 5 straight days with
+  zero human approvals in the sheet, worth flagging alongside the
+  analytics gap since it means no video has been rendered at all yet.
+  `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — 18 days stuck on the same
+  verification gap, now well past the halfway point of the 30-day
+  window with no real performance data ever collected.
