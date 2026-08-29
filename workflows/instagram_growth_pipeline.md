@@ -335,3 +335,20 @@ but still an external dependency on completing Meta's app review before
   `stats`/`charts`/`recent_videos` — 18 days stuck on the same
   verification gap, now well past the halfway point of the 30-day
   window with no real performance data ever collected.
+- 2026-08-29: repo was on a **detached HEAD** at run start again (same
+  recurring pattern, `origin/main` 4 commits ahead of local `main`,
+  ancestor-safe fast-forward) — resolved with the standing rule of thumb,
+  no issue. Drafted Pillar 2 (AI Pop-Culture Reimagining) since it hadn't
+  been used since 2026-08-11 while every other pillar had a more recent
+  entry — confirms the "check drafts + sheet, rotate to the least
+  recently used pillar" approach works even without an explicit written
+  rule for it. Still **zero** `Approved` rows in the Autosheet sheet (now
+  6 straight Pending rows, 08-24 through 08-29) — Part A has had nothing
+  to render/email for six consecutive runs, meaning no video has been
+  rendered or sent for review at all since this pipeline started.
+  `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **19 days** since the 2026-08-10
+  baseline with zero real follower/performance data, and only 11 days
+  remain before the 2026-09-09 deadline. Both gaps (no approvals, no
+  analytics) are escalated directly to the human in this run's summary
+  rather than just logged here again.
