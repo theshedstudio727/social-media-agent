@@ -352,3 +352,36 @@ but still an external dependency on completing Meta's app review before
   remain before the 2026-09-09 deadline. Both gaps (no approvals, no
   analytics) are escalated directly to the human in this run's summary
   rather than just logged here again.
+- 2026-08-30: repo was on a **detached HEAD** at run start again (5th
+  straight run, `origin/main` 5 commits ahead of local `main`,
+  ancestor-safe fast-forward) — resolved with the standing rule of thumb,
+  no issue. New failure mode this run: the first Autosheet call (a read
+  listing all rows) succeeded normally, but the very next Autosheet call
+  (appending today's draft row) failed with
+  `error_code: "api-billing-free-trial-ended"` — "Free trial ended.
+  Upgrade on https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing
+  to continue." Retried once via `autosheet_follow_up_agent`, same error
+  — this is not transient like the 2026-08-24 `GOOGLE_AUTH_REQUIRED`
+  outage, it's a billing/quota cutoff on the underlying GPT for Work
+  service Autosheet runs on, and needs a human to upgrade billing at that
+  URL before any further Autosheet calls (read or write) will work. This
+  blocked Part B step 5 (today's Pillar 4 draft row couldn't be appended
+  — drafted and committed the file anyway, needs manual sheet entry once
+  billing is fixed) and will likely block **all** Autosheet operations on
+  future runs, including Part A's read of Approved rows, until resolved
+  — escalating this directly to the human as the most urgent new item
+  this run, above the standing approvals/analytics gaps. Drafted Pillar 4
+  (Tool-Drop Reactive) since it was least recently used (last: 2026-08-25)
+  — reacted to Alibaba's real Wan3.0 launch (~2026-08-24, via WebSearch)
+  but since Wan3.0 isn't in OpenArt's catalog yet (`openart_model_list`
+  only has "Wan 2.7"), built it as a dramatized reenactment of the
+  capability on Kling 3 Omni (this pillar's default) rather than an
+  actual Wan3.0-rendered clip — worth checking `openart_model_list` again
+  on a future Tool-Drop pick in case Wan3.0 lands there later. Still
+  **zero** `Approved` rows in the Autosheet sheet (6 straight Pending
+  rows, 08-24 through 08-29, confirmed before the billing cutoff hit) —
+  Part A again had nothing to render/email. `get_personal_analytics`
+  still returns entirely empty `stats`/`charts`/`recent_videos` — **20
+  days** since the 2026-08-10 baseline with zero real follower/
+  performance data, now inside the final 10 days before the 2026-09-09
+  deadline.
