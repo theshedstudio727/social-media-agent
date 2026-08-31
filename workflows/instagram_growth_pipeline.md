@@ -385,3 +385,30 @@ but still an external dependency on completing Meta's app review before
   days** since the 2026-08-10 baseline with zero real follower/
   performance data, now inside the final 10 days before the 2026-09-09
   deadline.
+- 2026-08-31: repo was on a **detached HEAD** at run start again (6th
+  straight run, `origin/main` 6 commits ahead of local `main`,
+  ancestor-safe fast-forward) — resolved with the standing rule of thumb,
+  no issue. The Autosheet `api-billing-free-trial-ended` cutoff logged
+  2026-08-30 is **still in effect** the next day — retried once via
+  `autosheet_follow_up_agent`, identical error both times, confirming
+  this is a real billing lapse (not a one-run fluke) that needs a human
+  to upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing
+  before ANY Autosheet call (read or write) will work again. This
+  blocked Part A entirely for a second consecutive run (no way to even
+  read which rows are Approved, so no renders/emails were attempted —
+  every render this pipeline has ever needed is still sitting undone)
+  and blocked Part B step 5 again (today's Pillar 1 draft row couldn't
+  be appended — drafted and committed the file anyway, needs manual
+  sheet entry once billing is fixed). Drafted Pillar 1 (AI Reimagines
+  Era/Genre — 70s disco reimagined inside a melting glacier) since it
+  was least recently used (last: 2026-08-26) among the 5 pillars, all of
+  which have now rotated at least once in the last 6 days.
+  `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **21 days** since the 2026-08-10
+  baseline with zero real follower/performance data, now inside the
+  final 9 days before the 2026-09-09 deadline, with the Autosheet outage
+  on top meaning zero videos have ever been rendered or sent for review
+  at all. Escalating both the billing outage and the analytics/deadline
+  gap directly to the human via push notification this run, since this
+  is now a two-day-old blocker on the entire pipeline with 9 days left.
