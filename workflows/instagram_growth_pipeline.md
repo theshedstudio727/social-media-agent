@@ -412,3 +412,27 @@ but still an external dependency on completing Meta's app review before
   at all. Escalating both the billing outage and the analytics/deadline
   gap directly to the human via push notification this run, since this
   is now a two-day-old blocker on the entire pipeline with 9 days left.
+- 2026-09-01: repo was found on a **detached HEAD** at run start again,
+  same recurring pattern — this time `git rev-parse HEAD` and
+  `git rev-parse origin/main` were already identical (`9cecd73`), so the
+  local `main` branch ref itself was just stale/unmoved rather than
+  actually diverged; `git checkout main && git merge --ff-only
+  origin/main` still resolved it cleanly in one step (fast-forwarded 7
+  commits). The Autosheet `api-billing-free-trial-ended` cutoff logged
+  2026-08-30 is **still in effect** a third consecutive run — retried
+  once via `autosheet_follow_up_agent`, identical error again. Same
+  human action needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing)
+  before any Autosheet read or write will work. Blocked Part A entirely
+  again (still zero renders/emails ever sent this whole pipeline) and
+  Part B step 5 again (today's Pillar 5 draft row couldn't be appended —
+  drafted and committed the file anyway, needs manual sheet entry once
+  billing is fixed). Drafted Pillar 5 (AI Dance/Character — third Neo
+  installment, subway platform, paying off the rooftop episode's
+  engagement question) since it was least recently used (last:
+  2026-08-27). `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **22 days** since the 2026-08-10
+  baseline with zero real follower/performance data, now inside the
+  final **8 days** before the 2026-09-09 deadline. Escalating both the
+  3-day-old billing outage and the analytics/deadline gap directly to
+  the human via push notification this run.
