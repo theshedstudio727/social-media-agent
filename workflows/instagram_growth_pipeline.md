@@ -460,3 +460,28 @@ but still an external dependency on completing Meta's app review before
   rendered or sent for review at all because of the Autosheet outage.
   Escalating both the 4-day-old billing outage and the analytics/
   deadline gap directly to the human via push notification this run.
+- 2026-09-03: repo was on a **detached HEAD** at run start again, but
+  local HEAD and `origin/main` were already identical
+  (`git checkout main && git merge --ff-only origin/main` fast-forwarded
+  the one commit cleanly, no divergence). The Autosheet
+  `api-billing-free-trial-ended` cutoff logged 2026-08-30 is **still in
+  effect a 5th consecutive run** — retried once via
+  `autosheet_follow_up_agent`, identical error again. Same fix needed
+  (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (any Approved rows, if they exist, remain
+  invisible and unrendered) and Part B step 5 again (today's Pillar 2
+  draft row couldn't be appended — drafted and committed the file anyway,
+  needs manual sheet entry once billing is fixed). Drafted Pillar 2 (AI
+  Pop-Culture Reimagining — medieval joust reimagined as a zero-gravity
+  hover-duel) since it was least recently used (last: 2026-08-29) among
+  the 5 pillars. `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **24 days** since the 2026-08-10
+  baseline with zero real follower/performance data, now inside the
+  final **6 days** before the 2026-09-09 deadline, with no video ever
+  rendered or sent for review at all because of the Autosheet outage.
+  Escalating both the 5-day-old billing outage and the analytics/
+  deadline gap directly to the human via push notification this run —
+  with 6 days left and a still-broken approval pipeline, the 10K-by-
+  2026-09-09 goal is very unlikely to be reachable through this pipeline
+  as currently blocked.
