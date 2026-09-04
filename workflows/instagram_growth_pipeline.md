@@ -485,3 +485,25 @@ but still an external dependency on completing Meta's app review before
   with 6 days left and a still-broken approval pipeline, the 10K-by-
   2026-09-09 goal is very unlikely to be reachable through this pipeline
   as currently blocked.
+- 2026-09-04: repo was already attached to `main` and even with
+  `origin/main` at run start (no detached HEAD). The Autosheet
+  `api-billing-free-trial-ended` cutoff logged 2026-08-30 is **still in
+  effect a 6th consecutive run** — retried once via
+  `autosheet_follow_up_agent`, identical error again. Same fix needed
+  (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again and Part B step 5 again (today's Pillar 4
+  draft row couldn't be appended — drafted and committed the file
+  anyway). Drafted Pillar 4 (Tool-Drop Reactive) since it was least
+  recently used (last: 2026-08-30) — reacted to Grok Imagine 1.5, which
+  showed up in `openart_model_list` for the first time this run (not
+  present in the 2026-08-25 or 2026-08-30 catalog checks logged above):
+  unlike the Wan3.0 entry, this model is actually in OpenArt's catalog,
+  so the draft calls for a literal image2video render (native synced
+  audio) rather than a dramatized reenactment. `get_personal_analytics`
+  still returns entirely empty `stats`/`charts`/`recent_videos` — **25
+  days** since the 2026-08-10 baseline with zero real follower/
+  performance data, now inside the final **5 days** before the
+  2026-09-09 deadline, with the Autosheet billing outage now 6 days old
+  and zero videos ever rendered or sent for review. Escalating both
+  directly to the human via push notification this run.
