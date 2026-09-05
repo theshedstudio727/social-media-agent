@@ -507,3 +507,28 @@ but still an external dependency on completing Meta's app review before
   2026-09-09 deadline, with the Autosheet billing outage now 6 days old
   and zero videos ever rendered or sent for review. Escalating both
   directly to the human via push notification this run.
+- 2026-09-05: repo was on a **detached HEAD** at run start again (local
+  HEAD was already identical to `origin/main`, so `git checkout main &&
+  git merge --ff-only origin/main` fast-forwarded 3 commits with no
+  divergence). The Autosheet `api-billing-free-trial-ended` cutoff logged
+  2026-08-30 is **still in effect a 7th consecutive run** — retried once
+  via `autosheet_follow_up_agent` (both the read of current rows and,
+  separately, the attempt to append today's draft row), identical error
+  both times. Same fix still needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (any Approved rows, if they exist, remain
+  invisible and unrendered — still zero videos ever rendered or sent for
+  review this entire pipeline) and Part B step 5 again (today's Pillar 1
+  draft row couldn't be appended — drafted and committed the file anyway,
+  needs manual sheet entry once billing is fixed). Drafted Pillar 1 (AI
+  Reimagines Era/Genre — 80s New Wave/synth-pop set relocated to a
+  storm-battered lighthouse) since it was least recently used (last:
+  2026-08-31) among the 5 pillars. `get_personal_analytics` still returns
+  entirely empty `stats`/`charts`/`recent_videos` — **26 days** since the
+  2026-08-10 baseline with zero real follower/performance data, now
+  inside the final **4 days** before the 2026-09-09 deadline, with the
+  Autosheet billing outage now a full week old. Escalating both directly
+  to the human via push notification this run — with 4 days left, an
+  unresolved billing lapse, and no video ever rendered, the 10K-by-
+  2026-09-09 goal is not reachable through this pipeline unless the
+  billing issue is fixed and at least one Approved row exists very soon.
