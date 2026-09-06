@@ -532,3 +532,31 @@ but still an external dependency on completing Meta's app review before
   unresolved billing lapse, and no video ever rendered, the 10K-by-
   2026-09-09 goal is not reachable through this pipeline unless the
   billing issue is fixed and at least one Approved row exists very soon.
+- 2026-09-06: repo was on a **detached HEAD** at run start again (local
+  HEAD already identical to `origin/main` after fetch — `git checkout
+  main && git merge --ff-only origin/main` fast-forwarded 4 commits with
+  no divergence). The Autosheet `api-billing-free-trial-ended` cutoff
+  logged 2026-08-30 is **still in effect an 8th consecutive run** —
+  retried once via `autosheet_follow_up_agent`, identical error again.
+  Same fix still needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (any Approved rows, if they exist, remain
+  invisible and unrendered — still zero videos ever rendered or sent for
+  review this entire pipeline) and Part B step 5 again (today's Pillar 5
+  draft row couldn't be appended — drafted and committed the file anyway,
+  needs manual sheet entry once billing is fixed). Drafted Pillar 5 (AI
+  Dance/Character — fourth Neo installment, glass skybridge crossing,
+  paying off the subway episode's "underground vs. somewhere completely
+  different" engagement question) since it was least recently used (last:
+  2026-09-01) — all 5 pillars have now rotated exactly once in the last 5
+  days (09-01 through 09-05), so this restarts the rotation cleanly.
+  `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **27 days** since the 2026-08-10
+  baseline with zero real follower/performance data, now inside the
+  final **3 days** before the 2026-09-09 deadline, with the Autosheet
+  billing outage now a full week and a half old and zero videos ever
+  rendered or sent for review. Escalating both directly to the human via
+  push notification this run — with 3 days left, an unresolved billing
+  lapse this old, and zero renders ever, the 10K-by-2026-09-09 goal
+  should be treated as not reachable through this pipeline barring
+  immediate human intervention on the billing issue.
