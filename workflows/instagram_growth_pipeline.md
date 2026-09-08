@@ -585,3 +585,27 @@ but still an external dependency on completing Meta's app review before
   approved, the 10K-by-2026-09-09 goal is not reachable through this
   pipeline. Escalating this directly to the human via push notification
   this run.
+- 2026-09-08: repo was already attached to `main` and even with
+  `origin/main` at run start (no detached HEAD, working tree clean). The
+  Autosheet `api-billing-free-trial-ended` cutoff logged 2026-08-30 is
+  **still in effect a 10th consecutive run** — retried once via
+  `autosheet_follow_up_agent`, identical error again. Same fix still
+  needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again — still can't even read which rows are
+  Approved, so zero videos have ever been rendered or sent for review in
+  this pipeline's entire run. Blocked Part B step 5 again (today's
+  Pillar 2 draft row couldn't be appended — drafted and committed the
+  file anyway, needs manual sheet entry once billing is fixed). Drafted
+  Pillar 2 (AI Pop-Culture Reimagining — a duel reimagined entirely as a
+  tea ceremony, cut like a fighting-game finisher) since it was least
+  recently used (last: 2026-09-03) among the 5 pillars.
+  `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **29 days** since the 2026-08-10
+  baseline with zero real follower/performance data ever collected, and
+  **tomorrow (2026-09-09) is the deadline**. With the billing outage now
+  10 days old, zero videos ever rendered, and zero real analytics for
+  the entire 30-day window, the 10K-by-2026-09-09 goal cannot be reached
+  through this pipeline. Escalating directly to the human via push
+  notification this run, flagging that tomorrow's scheduled run will
+  hit the deadline-reached condition regardless of outcome.
