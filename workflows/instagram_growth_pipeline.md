@@ -609,3 +609,32 @@ but still an external dependency on completing Meta's app review before
   through this pipeline. Escalating directly to the human via push
   notification this run, flagging that tomorrow's scheduled run will
   hit the deadline-reached condition regardless of outcome.
+- 2026-09-09 (**DEADLINE DAY**): repo was on a **detached HEAD** at run
+  start again (local HEAD already identical to `origin/main` after fetch —
+  `git checkout main && git merge --ff-only origin/main` fast-forwarded 1
+  commit with no divergence). The Autosheet `api-billing-free-trial-ended`
+  cutoff logged 2026-08-30 is **still in effect an 11th consecutive run** —
+  retried once via `autosheet_follow_up_agent`, identical error again. Same
+  fix still needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again — across the pipeline's entire existence,
+  zero Approved rows have ever been readable and zero videos have ever
+  been rendered or sent for review. Blocked Part B step 5 again (today's
+  draft row couldn't be appended — drafted and committed the file anyway).
+  Drafted Pillar 4 (Tool-Drop Reactive) since it was least recently used
+  (last: 2026-09-04) — confirmed via `openart_model_list` that Wan 3.0
+  (`wan3-0`) is now actually in the catalog (native 30s single-pass clips),
+  closing the loop on the 2026-08-30 draft that had to fake this capability
+  because the real model wasn't available yet. `get_personal_analytics`
+  still returns entirely empty `stats`/`charts`/`recent_videos` — **30
+  days** since the 2026-08-10 baseline, meaning this pipeline collected
+  zero real follower/performance data for the entire 30-day window. Today,
+  2026-09-09, is the goal deadline (10K followers by today) per the
+  original plan, and per the scheduled routine's own instructions this
+  is flagged prominently in the run's final report with a reminder that
+  the human needs to disable the routine at
+  https://claude.ai/code/routines — the agent cannot disable it itself.
+  Given the 11-day-old unresolved Autosheet billing lapse and 30 days of
+  zero analytics, the 10K goal was not reachable through this pipeline as
+  built. If the human wants to continue past today, the routine should be
+  reconfigured with a new deadline/target rather than left running as-is.
