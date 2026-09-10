@@ -638,3 +638,29 @@ but still an external dependency on completing Meta's app review before
   zero analytics, the 10K goal was not reachable through this pipeline as
   built. If the human wants to continue past today, the routine should be
   reconfigured with a new deadline/target rather than left running as-is.
+- 2026-09-10 (**PAST DEADLINE — routine still firing**): repo was on a
+  **detached HEAD** at run start again, same recurring class of issue —
+  `git checkout main && git merge --ff-only origin/main` fast-forwarded 2
+  commits (2026-09-08 and 2026-09-09 drafts) with no divergence, nothing
+  lost. The Autosheet `api-billing-free-trial-ended` cutoff logged
+  2026-08-30 is **still in effect a 12th consecutive run** — retried once
+  via `autosheet_follow_up_agent`, identical error again on both the
+  Approved-row read and the new-row append. Same fix still needed (upgrade
+  at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire existence) and Part B step 5 again
+  (today's Pillar 1 draft row couldn't be appended — drafted and committed
+  the file anyway, needs manual sheet entry once billing is fixed). Drafted
+  Pillar 1 (AI Reimagines Era/Genre — Y2K eurodance set relocated to a
+  disused subway service tunnel) continuing the established P1→P5→P3→P2→P4
+  rotation order. `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **31 days** since the 2026-08-10
+  baseline with zero real follower/performance data ever collected.
+  **Today's date (2026-09-10) is already past the 2026-09-09 deadline** —
+  yesterday's run already flagged deadline day and recommended the human
+  disable or reconfigure the routine, but it fired again today regardless,
+  still with the same unresolved billing lapse and still zero renders ever
+  sent. Flagging this to the human again, more urgently: the routine needs
+  to be disabled at https://claude.ai/code/routines or reconfigured with a
+  new deadline — it cannot be stopped from inside a run.
