@@ -664,3 +664,29 @@ but still an external dependency on completing Meta's app review before
   sent. Flagging this to the human again, more urgently: the routine needs
   to be disabled at https://claude.ai/code/routines or reconfigured with a
   new deadline — it cannot be stopped from inside a run.
+- 2026-09-11 (**2 DAYS PAST DEADLINE — routine still firing**): repo was
+  on a **detached HEAD** at run start again, same recurring class of
+  issue — `git checkout main && git merge --ff-only origin/main`
+  fast-forwarded cleanly with no divergence, nothing lost. The Autosheet
+  `api-billing-free-trial-ended` cutoff logged 2026-08-30 is **still in
+  effect a 13th consecutive run** — retried once via
+  `autosheet_follow_up_agent`, identical error again on the Approved-row
+  read. Same fix still needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 32-day existence) and Part B
+  step 5 again (today's Pillar 5 draft row couldn't be appended —
+  drafted and committed the file anyway, needs manual sheet entry once
+  billing is fixed). Drafted Pillar 5 (AI Dance/Character — fifth Neo
+  installment, paying off the skybridge episode's "does she make it
+  across" question by landing her in a rooftop garden), continuing the
+  established rotation. `get_personal_analytics` still returns entirely
+  empty `stats`/`charts`/`recent_videos` — **32 days** since the
+  2026-08-10 baseline with zero real follower/performance data ever
+  collected. **Today (2026-09-11) is now 2 full days past the
+  2026-09-09 deadline** — this is the third consecutive run (09-09,
+  09-10, 09-11) to flag past-deadline status with no human action taken
+  yet on either the deadline or the 13-day-old billing lapse. Sending a
+  direct push notification this run rather than just logging it again,
+  since prior in-log flags haven't resulted in the routine being
+  disabled or reconfigured.
