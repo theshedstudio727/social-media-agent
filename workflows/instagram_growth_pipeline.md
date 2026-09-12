@@ -690,3 +690,29 @@ but still an external dependency on completing Meta's app review before
   direct push notification this run rather than just logging it again,
   since prior in-log flags haven't resulted in the routine being
   disabled or reconfigured.
+- 2026-09-12 (**3 DAYS PAST DEADLINE — routine still firing**): repo was
+  on a **detached HEAD** at run start again (local HEAD already identical
+  to `origin/main` after fetch — `git checkout main && git merge --ff-only
+  origin/main` fast-forwarded 4 commits with no divergence, nothing lost).
+  The Autosheet `api-billing-free-trial-ended` cutoff logged 2026-08-30 is
+  **still in effect a 15th consecutive run** — retried once via
+  `autosheet_follow_up_agent`, identical error again on the Approved-row
+  read. Same fix still needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 33-day existence) and Part B
+  step 5 again (today's Pillar 3 draft row couldn't be appended — drafted
+  and committed the file anyway, needs manual sheet entry once billing is
+  fixed). Drafted Pillar 3 (AI Hip-Hop/Influencer Content — MC freestyles
+  live proof against a "prove it's not pre-written" dare, with an in-verse
+  timestamp callback), continuing the established P3→P2→P4→P1→P5 rotation.
+  `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **33 days** since the 2026-08-10
+  baseline with zero real follower/performance data ever collected.
+  **Today (2026-09-12) is now 3 full days past the 2026-09-09 deadline** —
+  the fourth consecutive run (09-09 through 09-12) to flag past-deadline
+  status, with no human action yet on the deadline, the routine, or the
+  15-day-old billing lapse. Sending a direct push notification again this
+  run for the same reason as 09-11: prior flags in this log and in push
+  notifications have not resulted in the routine being disabled or
+  reconfigured.
