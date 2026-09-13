@@ -716,3 +716,32 @@ but still an external dependency on completing Meta's app review before
   run for the same reason as 09-11: prior flags in this log and in push
   notifications have not resulted in the routine being disabled or
   reconfigured.
+- 2026-09-13 (**DEADLINE PASSED — today's date is on/after 2026-09-09,
+  the routine's own goal-reached condition**): repo was on a **detached
+  HEAD** at run start again (local HEAD already identical to
+  `origin/main` after fetch — `git checkout main && git merge --ff-only
+  origin/main` fast-forwarded 5 commits with no divergence, nothing
+  lost). The Autosheet `api-billing-free-trial-ended` cutoff logged
+  2026-08-30 is **still in effect a 17th consecutive run** — retried
+  once via `autosheet_follow_up_agent`, identical error again on the
+  Approved-row read. Same fix still needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 34-day existence) and Part B
+  step 5 again (today's Pillar 2 draft row couldn't be appended —
+  drafted and committed the file anyway, needs manual sheet entry once
+  billing is fixed). Drafted Pillar 2 (AI Pop-Culture Reimagining — a
+  JRPG/fighting-game "true final boss" reveal restaged as a red carpet
+  arrival), continuing the established P2→P4→P1→P5→P3 rotation.
+  `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **34 days** since the 2026-08-10
+  baseline with zero real follower/performance data ever collected, and
+  this pipeline's own goal deadline (2026-09-09) is now **4 days in the
+  past** with the 10K target never reachable given zero renders and zero
+  analytics the entire window. Per this run's own instructions, flagging
+  this prominently at the top of the run's report and sending a direct
+  push notification: the human needs to disable this routine at
+  https://claude.ai/code/routines (or explicitly reconfigure it with a
+  new goal/deadline) — repeated in-log and push-notification flags on
+  09-09 through 09-12 have not resulted in that happening yet, and this
+  routine cannot disable itself.
