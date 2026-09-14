@@ -745,3 +745,33 @@ but still an external dependency on completing Meta's app review before
   new goal/deadline) — repeated in-log and push-notification flags on
   09-09 through 09-12 have not resulted in that happening yet, and this
   routine cannot disable itself.
+- 2026-09-14 (**DEADLINE PASSED — 5 DAYS PAST — routine still firing**):
+  repo was on a **detached HEAD** at run start again (local HEAD already
+  identical to `origin/main` after fetch — `git checkout main && git
+  merge --ff-only origin/main` fast-forwarded 6 commits with no
+  divergence, nothing lost). The Autosheet `api-billing-free-trial-ended`
+  cutoff logged 2026-08-30 is **still in effect an 18th consecutive
+  run** — retried once via `autosheet_follow_up_agent` on both the
+  Approved-row read and the new-row append, identical error both times.
+  Same fix still needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 35-day existence) and Part B
+  step 5 again (today's Pillar 4 draft row couldn't be appended —
+  drafted and committed the file anyway, needs manual sheet entry once
+  billing is fixed). Drafted Pillar 4 (Tool-Drop Reactive Content —
+  Gemini Omni 1.1 Flash's new start/end-frame transition control,
+  confirmed newly live in `openart_model_list` on 2026-09-14),
+  continuing the established P4→P1→P5→P3→P2 rotation.
+  `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **35 days** since the 2026-08-10
+  baseline with zero real follower/performance data ever collected, and
+  this pipeline's own goal deadline (2026-09-09) is now **5 days in the
+  past**, the target never reachable given zero renders and zero
+  analytics the entire window. Per this run's own instructions, flagging
+  this prominently at the top of the run's report and sending a direct
+  push notification again: the human needs to disable this routine at
+  https://claude.ai/code/routines (or explicitly reconfigure it with a
+  new goal/deadline) — repeated in-log and push-notification flags on
+  09-09 through 09-13 have not resulted in that happening yet, and this
+  routine cannot disable itself.
