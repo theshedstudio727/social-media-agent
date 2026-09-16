@@ -804,3 +804,30 @@ but still an external dependency on completing Meta's app review before
   new goal/deadline) — repeated in-log and push-notification flags on
   09-09 through 09-14 have not resulted in that happening yet, and this
   routine cannot disable itself.
+- 2026-09-16 (**DEADLINE PASSED — 7 DAYS PAST — routine still firing**):
+  repo was on `main`, up to date with `origin/main`, no detached HEAD this
+  time. The Autosheet `api-billing-free-trial-ended` cutoff logged
+  2026-08-30 is **still in effect a 20th consecutive run** — retried once
+  via `autosheet_follow_up_agent` on both the Approved-row read and the
+  new-row append, identical error both times. Same fix still needed
+  (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 37-day existence) and Part B
+  step 5 again (today's Pillar 5 draft row couldn't be appended — drafted
+  and committed the file anyway, needs manual sheet entry once billing is
+  fixed). Drafted Pillar 5 (AI Dance/Character — Neo episode six, rooftop
+  garden into a glasshouse dome), continuing the established
+  P4→P1→P5→P3→P2 rotation (last Pillar 5 was 2026-09-11).
+  `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **37 days** since the 2026-08-10
+  baseline with zero real follower/performance data ever collected, and
+  this pipeline's own goal deadline (2026-09-09) is now **7 days in the
+  past**, the target never reachable given zero renders and zero
+  analytics the entire window. Per this run's own instructions, flagging
+  this prominently at the top of the run's report and sending a direct
+  push notification again: the human needs to disable this routine at
+  https://claude.ai/code/routines (or explicitly reconfigure it with a
+  new goal/deadline) — repeated in-log and push-notification flags on
+  09-09 through 09-15 have not resulted in that happening yet, and this
+  routine cannot disable itself.
