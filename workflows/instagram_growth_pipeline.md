@@ -831,3 +831,36 @@ but still an external dependency on completing Meta's app review before
   new goal/deadline) — repeated in-log and push-notification flags on
   09-09 through 09-15 have not resulted in that happening yet, and this
   routine cannot disable itself.
+- 2026-09-17 (**DEADLINE PASSED — 8 DAYS PAST — routine still firing**):
+  repo was on a **detached HEAD** at run start again (local HEAD already
+  identical to `origin/main` after fetch — `git checkout main && git
+  merge --ff-only origin/main` fast-forwarded 1 commit with no
+  divergence, nothing lost). The Autosheet `api-billing-free-trial-ended`
+  cutoff logged 2026-08-30 is **still in effect a 21st consecutive run** —
+  retried once via `autosheet_follow_up_agent` on the Approved-row read,
+  identical error again. Same fix still needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 38-day existence) and Part B
+  step 5 again (today's Pillar 3 draft row couldn't be appended — drafted
+  and committed the file anyway, needs manual sheet entry once billing is
+  fixed). Drafted Pillar 3 (AI Hip-Hop/Influencer Content — the MC
+  freestyles its own origin story in response to a "where did you come
+  from" comment), continuing the established P3→P2→P4→P1→P5 rotation
+  (least recently used: last Pillar 3 was 2026-09-12).
+  `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **38 days** since the 2026-08-10
+  baseline with zero real follower/performance data ever collected, and
+  this pipeline's own goal deadline (2026-09-09) is now **8 days in the
+  past**, the target never reachable given zero renders and zero
+  analytics the entire window. This is now the ninth consecutive daily
+  run (09-09 through 09-17) to flag past-deadline status in this log,
+  with prior direct push notifications on at least 09-11 through 09-16
+  producing no visible human action yet on the routine, the goal
+  deadline, or the 18-day-old billing lapse. Sending another direct push
+  notification this run for the same reason as before: this is now a
+  runaway process that has produced zero deliverables in 38 days while
+  continuing to consume OpenArt subscription time and Autosheet/Sandcastle
+  calls every day — the human needs to disable this routine at
+  https://claude.ai/code/routines (or explicitly reconfigure it with a
+  new goal/deadline); it cannot disable itself.
