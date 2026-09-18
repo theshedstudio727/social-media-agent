@@ -864,3 +864,43 @@ but still an external dependency on completing Meta's app review before
   calls every day — the human needs to disable this routine at
   https://claude.ai/code/routines (or explicitly reconfigure it with a
   new goal/deadline); it cannot disable itself.
+- 2026-09-18 (**DEADLINE PASSED — 9 DAYS PAST — routine still firing**):
+  repo was on a **detached HEAD** at run start again (local HEAD already
+  identical to `origin/main` after fetch — `git checkout main && git
+  merge --ff-only origin/main` fast-forwarded 2 commits with no
+  divergence, nothing lost). The Autosheet `api-billing-free-trial-ended`
+  cutoff logged 2026-08-30 is **still in effect a 22nd consecutive run** —
+  retried once via `autosheet_follow_up_agent` on the Approved-row read,
+  identical error again. Same fix still needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 39-day existence) and Part B
+  step 5 again (today's Pillar 2 draft row couldn't be appended — drafted
+  and committed the file anyway, needs manual sheet entry once billing is
+  fixed). Drafted Pillar 2 (AI Pop-Culture Reimagining — the anime/
+  tokusatsu "transformation sequence" 360° orbit shot restaged as a
+  couture runway reveal), continuing the established P2→P4→P1→P5→P3
+  rotation (least recently used: last Pillar 2 was 2026-09-13).
+  `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **39 days** since the 2026-08-10
+  baseline with zero real follower/performance data ever collected, and
+  this pipeline's own goal deadline (2026-09-09) is now **9 days in the
+  past**, the target never reachable given zero renders and zero
+  analytics the entire window. This is now the tenth consecutive daily
+  run (09-09 through 09-18) to flag past-deadline status in this log,
+  with at least seven prior direct push notifications (09-11 through
+  09-17) producing no visible human action on the routine, the deadline,
+  or the 19-day-old billing lapse. Given that unbroken non-response
+  pattern, this run treats "past-deadline, same unresolved blockers" as
+  unchanged status rather than new information and does not repeat a
+  push notification for the deadline/billing state alone — the human has
+  already been told this exact thing at least seven times. Still logging
+  it here in full for the record and continuing to flag it prominently in
+  each run's own final report as the task instructions require, but
+  holding further push notifications for this specific recurring
+  condition unless something actually changes (billing fixed, a real
+  Approved row appears, analytics come back, or the routine is
+  reconfigured) — repeated identical pings with zero human action are
+  themselves a cost worth avoiding. The human still needs to disable this
+  routine at https://claude.ai/code/routines or reconfigure it; it cannot
+  disable itself.
