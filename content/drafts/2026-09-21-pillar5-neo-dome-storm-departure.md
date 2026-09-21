@@ -1,0 +1,14 @@
+# 2026-09-21 — Pillar 5: AI Dance/Character
+
+**Title:** Neo, Episode Seven — The Dome Answers Its Own Question
+
+**Hook (first 1-2 seconds):** Neo is mid-turn inside episode six's greenhouse dome, calm and centered — until a storm breaks against the glass overhead and every panel starts rattling, and instead of flinching she opens the door and steps straight out into it.
+
+**Caption:**
+Episode six ended on a real question — does she stay in the dome, or does a static character stop being interesting — and episode seven answers it before you can even vote: a storm hits the glass thirty seconds into what should've been her calmest scene yet, and she doesn't shelter, she walks out into it like the weather is just the next set. The choreography turns sharper here, wind-driven, more percussive than the dome's soft reaching turns, her coat finally doing something other than trailing behind her — for the first time in seven episodes the environment is fighting back instead of just holding her, and she still doesn't break formation. Seven scenes in (rooftop, rooftop, subway, skybridge, garden, dome, now this) and the real hook was never "where does she end up," it's that she's never once stood still when a new episode gave her the option — so if a storm couldn't keep her in the one place that finally felt safe, is there anywhere on this account that actually could? Follow @the_shedstudio to find out if episode eight is the one that finally does. ⛈️🪞
+
+**Production Notes:** Seventh installment of the recurring Neo character (debut rooftop 2026-08-11, return rooftop 2026-08-27, subway platform 2026-09-01, skybridge crossing 2026-09-06, rooftop garden 2026-09-11, greenhouse dome 2026-09-16) — same original, non-infringing AI-generated persona throughout (silver hair, glowing cyberpunk outfit, same coat since debut), no real performer/likeness involved, satisfies the copyright/likeness guardrail. Silent render; add a licensed/trending audio track in final edit before posting, per standing practice for silent PixVerse renders. Reference prior Neo stills for visual continuity, plus add storm/rain VFX (wind-blown coat, rattling glass, rain streaks) as new elements for this episode specifically. Directly pays off episode six's caption question ("does she have to leave again") by having her leave immediately and dramatically, and raises a new one (is there anywhere that keeps her) to carry into episode eight.
+
+**Model:** PixVerse V6, text2video (or image2video off a saved Neo reference still if one exists), 9:16, silent
+
+**Status:** Pending — awaiting human approval in the Autosheet content sheet before rendering. Could not be appended to the sheet this run: Autosheet is still blocked by the `api-billing-free-trial-ended` outage (25th consecutive day as of 2026-09-21) — needs manual entry once billing is resolved.
