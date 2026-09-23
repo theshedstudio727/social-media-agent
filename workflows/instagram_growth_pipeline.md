@@ -1022,3 +1022,35 @@ but still an external dependency on completing Meta's app review before
   instructions. The human still needs to disable this routine at
   https://claude.ai/code/routines or reconfigure it; it cannot disable
   itself.
+- 2026-09-23 (**DEADLINE PASSED — 14 DAYS PAST — routine still firing**):
+  repo was already attached to `main` and even with `origin/main` at run
+  start (no detached HEAD, working tree clean). The Autosheet
+  `api-billing-free-trial-ended` cutoff logged 2026-08-30 is **still in
+  effect a 27th consecutive run** — checked via a fresh
+  `autosheet_start_agent_google_sheets_spreadsheet` read for Approved rows
+  (identical error), retried once via `autosheet_follow_up_agent`
+  (identical error), then attempted the Part B row append anyway
+  (identical error a third time this run). Same fix still needed (upgrade
+  at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 44-day existence) and Part B
+  step 5 again (today's Pillar 2 draft row couldn't be appended — drafted
+  and committed the file anyway, needs manual sheet entry once billing is
+  fixed). Drafted Pillar 2 (AI Pop-Culture Reimagining — the tokusatsu/
+  kaiju ground-level reveal shot restaged as a barista's oversized
+  coffee cup landing, steam/grounds standing in for the shockwave/dust),
+  continuing the established P2→P4→P1→P5→P3 rotation (last Pillar 2 was
+  2026-09-18). `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **44 days** since the 2026-08-10
+  baseline with zero real follower/performance data ever collected, and
+  this pipeline's own goal deadline (2026-09-09) is now **14 days in the
+  past**, the target never reachable given zero renders and zero
+  analytics the entire window. Per the 2026-09-18 standing decision this
+  remains unchanged status (same billing block, same empty analytics,
+  same past-deadline condition, no new Approved rows to even attempt
+  rendering), so no push notification is sent for this alone — still
+  logging it here in full and flagging it prominently in this run's own
+  final report per the task instructions. The human still needs to
+  disable this routine at https://claude.ai/code/routines or reconfigure
+  it; it cannot disable itself.
