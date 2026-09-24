@@ -1054,3 +1054,38 @@ but still an external dependency on completing Meta's app review before
   final report per the task instructions. The human still needs to
   disable this routine at https://claude.ai/code/routines or reconfigure
   it; it cannot disable itself.
+- 2026-09-24 (**DEADLINE PASSED — 15 DAYS PAST — routine still firing**):
+  repo was already attached to `main` and even with `origin/main` at run
+  start (no detached HEAD, working tree clean). The Autosheet
+  `api-billing-free-trial-ended` cutoff logged 2026-08-30 is **still in
+  effect a 28th consecutive run** — checked via a fresh
+  `autosheet_start_agent_google_sheets_spreadsheet` read for Approved rows
+  (identical error), retried once via `autosheet_follow_up_agent`
+  (identical error), then attempted the Part B row append anyway
+  (identical error a third time this run). Same fix still needed (upgrade
+  at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 45-day existence) and Part B
+  step 5 again (today's Pillar 4 draft row couldn't be appended — drafted
+  and committed the file anyway, needs manual sheet entry once billing is
+  fixed). Drafted Pillar 4 (Tool-Drop Reactive Content — OpenArt's new
+  Smart Shot automated shot-planning tool, confirmed newly present in
+  `openart_model_list` on 2026-09-24: outputs a full production-design
+  sheet — reference views, top-down camera floor plan, storyboard frames,
+  lighting notes — alongside the rendered video in one
+  `generate-shot-video` call), continuing the established P4→P1→P5→P3→P2
+  rotation (least recently used: last Pillar 4 was 2026-09-19).
+  `get_personal_analytics` still returns entirely empty
+  `stats`/`charts`/`recent_videos` — **45 days** since the 2026-08-10
+  baseline with zero real follower/performance data ever collected, and
+  this pipeline's own goal deadline (2026-09-09) is now **15 days in the
+  past**, the target never reachable given zero renders and zero
+  analytics the entire window. Per the 2026-09-18 standing decision this
+  remains unchanged status (same billing block, same empty analytics,
+  same past-deadline condition, no new Approved rows to even attempt
+  rendering), so no push notification is sent for this alone — still
+  logging it here in full and flagging it prominently in this run's own
+  final report per the task instructions. The human still needs to
+  disable this routine at https://claude.ai/code/routines or reconfigure
+  it; it cannot disable itself.
