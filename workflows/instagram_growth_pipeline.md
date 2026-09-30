@@ -1276,4 +1276,18 @@ but still an external dependency on completing Meta's app review before
   still logging it here in full and flagging it prominently in this run's
   own final report per the task instructions. The human still needs to
   disable this routine at https://claude.ai/code/routines or reconfigure
-  it; it cannot disable itself.
+  it; it cannot disable itself. Correction to this same entry's opening
+  line: `git branch --show-current` actually returned empty at run start
+  (detached HEAD, same recurring pattern as prior runs) — misread at
+  first as "already on main." The new wrinkle this run: local `main` was
+  not just unmoved, it was several commits *stale* (`27a5faa`, missing
+  everything back through 09-24), while detached HEAD already matched
+  `origin/main` (`5411de5`). `git checkout main` failed with "local
+  changes would be overwritten" because checking out the stale `main`
+  ref would have reverted the already-edited workflow file. Fix: commit
+  first while still detached, then `git branch -f main HEAD` to fast-
+  forward the local ref onto the commit that already matches
+  `origin/main`, then `git checkout main` cleanly. Rule of thumb refined
+  again: don't trust `git branch --show-current` output at a glance —
+  compare `git rev-parse HEAD` / `main` / `origin/main` explicitly before
+  deciding whether a plain checkout is safe.
