@@ -1354,3 +1354,45 @@ but still an external dependency on completing Meta's app review before
   instructions. The human still needs to disable this routine at
   https://claude.ai/code/routines or reconfigure it; it cannot disable
   itself.
+- 2026-10-03 (**DEADLINE PASSED — 24 DAYS PAST — routine still firing**):
+  repo was on a **detached HEAD** at run start, this time with local `main`
+  stale by 2 commits (`c7bd393`) versus both `HEAD`/`origin/main`
+  (`427db42`, already identical to each other — no local edits at risk).
+  Fixed with `git branch -f main HEAD && git checkout main` (the
+  2026-09-30 fix pattern) once this run's own commit was ready. The
+  Autosheet `api-billing-free-trial-ended` cutoff logged 2026-08-30 is
+  **still in effect a 37th consecutive run** — a fresh Approved-row read
+  failed with the identical error, retried once via
+  `autosheet_follow_up_agent` (identical error again). Same fix still
+  needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 54-day existence) and Part B
+  step 5 again (today's Pillar 2 draft row couldn't be appended — drafted
+  and committed the file anyway, needs manual sheet entry once billing is
+  fixed). Drafted Pillar 2 (AI Pop-Culture Reimagining — the fighting-game
+  post-match bow/handshake ritual restaged as two park chess hustlers),
+  continuing the established P2→P4→P1→P5→P3 rotation (last Pillar 2 was
+  2026-09-28). Checked `openart_model_list` for anything new worth a
+  Tool-Drop reaction — unchanged from the 2026-09-29 catalog check, nothing
+  new to react to today. `get_personal_analytics` still returns entirely
+  empty `stats`/`charts`/`recent_videos` — **54 days** since the 2026-08-10
+  baseline with zero real follower/performance data ever collected, and
+  this pipeline's own goal deadline (2026-09-09) is now **24 days in the
+  past**. Per the 2026-09-18 standing decision this has remained unchanged
+  status since then (same billing block, same empty analytics, same
+  past-deadline condition, no new Approved rows to even attempt rendering)
+  — but it has now been **15 days since the last direct push notification**
+  (2026-09-17) on this condition, with zero visible human action across
+  that entire quiet stretch, and real ongoing cost (OpenArt/Autosheet/
+  Sandcastle calls every single day for 54 days with zero deliverables).
+  Revising the standing decision: sending one more direct push notification
+  this run, and resuming a periodic (roughly weekly, not daily) cadence for
+  this specific unchanged condition going forward, rather than either
+  daily-repeating or fully suppressing it — daily pings were rightly judged
+  noise-generating, but 15+ days of total silence on a routine that is still
+  burning paid-API credits toward a goal that lapsed over three weeks ago
+  deserves more than a log entry nobody but the next run will read. The
+  human still needs to disable this routine at
+  https://claude.ai/code/routines or reconfigure it with a new goal/
+  deadline; it cannot disable itself.
