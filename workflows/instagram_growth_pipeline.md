@@ -1396,3 +1396,53 @@ but still an external dependency on completing Meta's app review before
   human still needs to disable this routine at
   https://claude.ai/code/routines or reconfigure it with a new goal/
   deadline; it cannot disable itself.
+- 2026-10-05 (**DEADLINE PASSED — 26 DAYS PAST — routine still firing**):
+  repo was on a **detached HEAD** at run start again (local HEAD already
+  identical to `origin/main` after fetch — `git checkout main && git merge
+  --ff-only origin/main` fast-forwarded 3 commits with no divergence,
+  nothing lost). No draft/row exists for 2026-10-04 — either that run
+  didn't fire or it silently produced nothing; not investigable from here,
+  so just treated today as "nothing dated 2026-10-05 yet" and drafted
+  normally, continuing the rotation from the last *actual* entry
+  (2026-10-03, Pillar 2) to Pillar 4 next. The Autosheet
+  `api-billing-free-trial-ended` cutoff logged 2026-08-30 is **still in
+  effect a 38th consecutive run** — a fresh Approved-row read failed with
+  the identical error, retried once via `autosheet_follow_up_agent`
+  (identical error again). Same fix still needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 56-day existence) and Part B step 5
+  again (today's Pillar 4 draft row couldn't be appended — drafted and
+  committed the file anyway, needs manual sheet entry once billing is
+  fixed). Drafted Pillar 4 (Tool-Drop Reactive Content — MiniMax H3's
+  audio-element voice-reference capability dropped into a brand-new scene,
+  not just a re-render of the reference clip), continuing the established
+  P4→P1→P5→P3→P2 rotation. Checked `openart_model_list` for anything
+  genuinely new first — unchanged from the 2026-09-29/10-03 catalog
+  checks, nothing newly launched, so this draft reacts to an
+  already-cataloged-but-unused capability instead of a fresh drop.
+  **Notable new development:** `get_personal_analytics` returned real,
+  non-empty data for the first time in this pipeline's 56-day history —
+  but it does not look like Instagram data for @the_shedstudio at all.
+  It reports `total_followers: 37` with `followers_monitoring_started:
+  2026-10-05` (i.e. verification/monitoring apparently just started
+  *today*, not back on 2026-08-10), and every video in `recent_videos` is
+  tagged `platform: "youtube-shorts"` with titles like "Throne of Ash |
+  Epic Boss Battle Theme" and "Jade — AI Artist Brings Back 80s
+  Vietnamese New Wave" — none of which match any Instagram Reel this
+  pipeline has ever drafted. This strongly suggests the channel that just
+  got verified for personal analytics is a **YouTube channel** (likely
+  the one from the sibling "Youtube Content Agent" pipeline referenced
+  elsewhere in this doc), not the Instagram account this routine exists
+  to grow, and the 37-follower figure should NOT be read as Instagram
+  progress toward the 10,000 goal. Flagging this directly to the human:
+  it's worth checking whether Sandcastles' "verified channel" for this
+  workspace got pointed at the wrong account, since @the_shedstudio's
+  Instagram follower count is still effectively unverified/unknown 56
+  days into a (lapsed) 30-day goal. Given this is new information (first
+  non-empty analytics ever, albeit confusing/likely-wrong-platform) on top
+  of the standing billing outage and past-deadline status, sending a push
+  notification this run rather than waiting for the next scheduled weekly
+  check-in. The human still needs to disable this routine at
+  https://claude.ai/code/routines or reconfigure it with a new goal/
+  deadline; it cannot disable itself.
