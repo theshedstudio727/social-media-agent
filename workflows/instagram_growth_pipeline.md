@@ -1489,3 +1489,42 @@ but still an external dependency on completing Meta's app review before
   The human still needs to disable this routine at
   https://claude.ai/code/routines or reconfigure it with a new goal/
   deadline; it cannot disable itself.
+- 2026-10-07 (**DEADLINE PASSED — 28 DAYS PAST — routine still firing**):
+  repo was on a **detached HEAD** at run start again (local HEAD already
+  identical to `origin/main` after fetch — `git checkout main && git merge
+  --ff-only origin/main` fast-forwarded 1 commit with no divergence,
+  nothing lost). The Autosheet `api-billing-free-trial-ended` cutoff
+  logged 2026-08-30 is **still in effect a 40th consecutive run** — a
+  fresh Approved-row read failed with the identical error, retried once
+  via `autosheet_follow_up_agent` (identical error), then attempted the
+  Part B row append anyway (identical error a third time this run). Same
+  fix still needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 58-day existence) and Part B step 5
+  again (today's Pillar 5 draft row couldn't be appended — drafted and
+  committed the file anyway, needs manual sheet entry once billing is
+  fixed). Drafted Pillar 5 (AI Dance/Character — Neo episode ten, a
+  milestone/recap episode that reveals all 9 prior locations were facets
+  of one mirrored space, with a new audience-vote-for-episode-11 CTA),
+  continuing the established P5→P3→P2→P4→P1 rotation (last Pillar 5 was
+  2026-10-01). `get_personal_analytics` still returns the same
+  non-empty-but-wrong-platform data flagged 2026-10-05/10-06:
+  `total_followers: 36` (down 1 from the 37 logged the last two runs),
+  `recent_videos` still all tagged `platform: "youtube-shorts"` with the
+  same YouTube-Shorts titles ("Throne of Ash", "Jade — AI Artist Brings
+  Back 80s Vietnamese New Wave", etc.) — confirms for a third consecutive
+  run this is not a one-off glitch: whatever channel Sandcastles verified
+  for this workspace is the YouTube channel, not @the_shedstudio's
+  Instagram. @the_shedstudio's real Instagram follower count remains
+  unverified/unknown 58 days into a (lapsed) 30-day goal. This pipeline's
+  own goal deadline (2026-09-09) is now **28 days in the past**. Per the
+  2026-10-03 standing decision (periodic, roughly-weekly pings rather than
+  daily or fully-suppressed) and since the last push notification was only
+  2 days ago (2026-10-05) with nothing new to report today beyond "still
+  blocked, still past deadline, still wrong channel, follower count moved
+  by 1" — no push notification sent this run; logging it here in full and
+  flagging it prominently in this run's own final report per the task
+  instructions. The human still needs to disable this routine at
+  https://claude.ai/code/routines or reconfigure it with a new goal/
+  deadline; it cannot disable itself.
