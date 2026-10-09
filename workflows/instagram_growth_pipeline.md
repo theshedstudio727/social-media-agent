@@ -1568,3 +1568,43 @@ but still an external dependency on completing Meta's app review before
   The human still needs to disable this routine at
   https://claude.ai/code/routines or reconfigure it with a new goal/
   deadline; it cannot disable itself.
+- 2026-10-09 (**DEADLINE PASSED — 30 DAYS PAST — routine still firing**):
+  repo was on a **detached HEAD** at run start again, same recurring class
+  of issue — local HEAD was already identical to `origin/main` after
+  fetch (3 commits behind local's prior position, 0 divergence), so
+  `git checkout main && git merge --ff-only origin/main` fast-forwarded
+  cleanly with nothing lost. The Autosheet `api-billing-free-trial-ended`
+  cutoff logged 2026-08-30 is **still in effect a 42nd consecutive run** —
+  both the Approved-row read for Part A and the Part B row-append attempt
+  failed with the byte-for-byte identical error this run (no second retry
+  on the read, consistent with the 2026-10-08 call to stop retrying since
+  it has never once succeeded). Same fix still needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 60-day existence) and Part B
+  step 5 again (today's Pillar 2 draft row couldn't be appended — drafted
+  and committed the file anyway, needs manual sheet entry once billing is
+  fixed). Drafted Pillar 2 (AI Pop-Culture Reimagining — an anime
+  magical-girl transformation sequence reimagined as a line cook tying her
+  apron before the dinner rush), continuing the established
+  P5→P3→P2→P4→P1 rotation (last Pillar 2 was 2026-10-03).
+  `get_personal_analytics` still returns the same non-empty-but-wrong-
+  platform data flagged 2026-10-05 onward: `total_followers: 36`
+  (unchanged for a third straight run), `recent_videos` still all tagged
+  `platform: "youtube-shorts"` with the same YouTube Shorts titles — a
+  fifth consecutive confirmation this is the sibling YouTube channel, not
+  @the_shedstudio's Instagram. @the_shedstudio's real Instagram follower
+  count remains unverified/unknown 60 days into a (lapsed) 30-day goal.
+  This pipeline's own goal deadline (2026-09-09) is now exactly **30 days
+  (one full month) in the past**, with the Autosheet billing outage 40
+  days old and zero videos ever rendered or sent for review in this
+  pipeline's entire existence. Per the 2026-10-03 standing decision
+  (periodic, roughly-weekly pings rather than daily or fully-suppressed):
+  the last push notification was 2026-10-05, 4 days ago, and while nothing
+  qualitatively new happened this run (still blocked, still wrong channel,
+  follower count still flat at 36), the one-month-past-deadline milestone
+  is a natural round-number check-in point — sending a push notification
+  this run on that basis, alongside flagging it prominently in this run's
+  own final report per the task instructions. The human still needs to
+  disable this routine at https://claude.ai/code/routines or reconfigure
+  it with a new goal/deadline; it cannot disable itself.
