@@ -1608,3 +1608,46 @@ but still an external dependency on completing Meta's app review before
   own final report per the task instructions. The human still needs to
   disable this routine at https://claude.ai/code/routines or reconfigure
   it with a new goal/deadline; it cannot disable itself.
+- 2026-10-10 (**DEADLINE PASSED — 31 DAYS PAST — routine still firing**):
+  repo was on a **detached HEAD** at run start again, same recurring class
+  of issue — local HEAD was already identical to `origin/main` after
+  fetch (4 commits behind local's prior position, 0 divergence), so
+  `git checkout main && git merge --ff-only origin/main` fast-forwarded
+  cleanly with nothing lost. The Autosheet `api-billing-free-trial-ended`
+  cutoff logged 2026-08-30 is **still in effect a 43rd consecutive run** —
+  both the Approved-row read for Part A and the Part B row-append attempt
+  failed with the byte-for-byte identical error this run (no retry on
+  either call, per the 2026-10-08 decision to stop retrying since it has
+  never once succeeded in 41+ prior attempts). Same fix still needed
+  (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 61-day existence) and Part B
+  step 5 again (today's Pillar 4 draft row couldn't be appended — drafted
+  and committed the file anyway, needs manual sheet entry once billing is
+  fixed). Checked `openart_model_list` first — unchanged from the
+  09-29/10-03/10-05/10-06/10-08 catalog checks, nothing newly launched, so
+  no fresh-drop angle; drafted Pillar 4 (Tool-Drop Reactive Content) around
+  an already-cataloged-but-previously-unused capability instead: Seedance
+  2.5's draft mode (480p preview, upgradable to full 1080p within 7 days
+  for the same underlying render), framed as a "preview before you pay"
+  workflow demo rather than a reaction to something brand-new, continuing
+  the established P5→P3→P2→P4→P1 rotation (last Pillar 4 was 2026-10-05).
+  `get_personal_analytics` still returns the same non-empty-but-wrong-
+  platform data flagged 2026-10-05 onward: `total_followers: 36` (flat for
+  a fourth straight run), `recent_videos` still all tagged
+  `platform: "youtube-shorts"` with the same YouTube Shorts titles — a
+  sixth consecutive confirmation this is the sibling YouTube channel, not
+  @the_shedstudio's Instagram. @the_shedstudio's real Instagram follower
+  count remains unverified/unknown 61 days into a (lapsed) 30-day goal.
+  This pipeline's own goal deadline (2026-09-09) is now **31 days (one
+  month and a day) in the past**. Per the 2026-10-03 standing decision
+  (periodic, roughly-weekly pings rather than daily or fully-suppressed):
+  the last push notification was 2026-10-09, only 1 day ago (the
+  one-month milestone), and nothing qualitatively new happened today
+  (still blocked, still wrong channel, follower count still flat at 36) —
+  so no push notification sent this run; logging it here in full and
+  flagging it prominently in this run's own final report per the task
+  instructions. The human still needs to disable this routine at
+  https://claude.ai/code/routines or reconfigure it with a new goal/
+  deadline; it cannot disable itself.
