@@ -1,0 +1,15 @@
+# 2026-10-12 — Pillar 5: AI Dance/Character
+
+**Title:** Neo, Episode Eleven — Back Where It Started
+
+**Hook (first 1-2 seconds):** The mirror shards from the vault floor collapse inward and reform as rooftop gravel — the comments picked it, so two months after her debut she's standing on the exact same ledge, except this time she doesn't look down before she moves.
+
+**Caption:**
+Episode ten cracked the floor into nine reflections and left the choice to you, and the comments were clear: go back to the rooftop, the one she debuted on two months ago when every landing looked like it might be the one that didn't stick. Episode eleven answers with the smallest possible gesture doing the biggest possible work — she steps to the same edge, the same wind, the same skyline, and where episode one held a half-second of hesitation before the first jump, this time there's none, because nine locations later the hesitation isn't in her anymore, it's gone. That's the real payoff of a bookend: not a bigger stunt, but proof that the character actually changed between the first frame and this one. Round numbers are for recaps — the in-between number is for showing the work. So now that she's not afraid of this ledge anymore, where should episode twelve push her: somewhere brand new, or one more callback to a place we haven't revisited yet — tell us in the comments. Follow @the_shedstudio to see which one wins.
+
+**Production Notes:**
+Eleventh installment of the recurring Neo character (debut rooftop 2026-08-11, return rooftop 2026-08-27, subway platform 2026-09-01, skybridge crossing 2026-09-06, rooftop garden 2026-09-11, greenhouse dome 2026-09-16, storm departure 2026-09-21, underground vault 2026-09-26, vault release 2026-10-01, mirror-floor recap/audience-vote setup 2026-10-07) — same original, non-infringing AI-generated persona throughout (silver hair, glowing cyberpunk outfit, same coat since debut), no real performer/likeness involved, satisfies the copyright/likeness guardrail. This episode pays off episode ten's comment-vote mechanic by returning to the debut rooftop location, framed as a direct visual callback to the very first episode's opening beat (same ledge, same skyline) but with the hesitation beat removed to show character growth. Silent render; add a licensed/trending audio track in final edit before posting, per standing practice for silent PixVerse renders. Reference the 2026-08-11 debut rooftop stills for exact ledge/skyline continuity, and prior Neo stills for costume continuity. Key beat: mirror shards from the prior episode's ending visually resolve into rooftop gravel/texture as a connective transition device between episodes ten and eleven.
+
+**Model:** PixVerse V6, text2video (or image2video off a saved Neo/rooftop reference still if one exists), 9:16, silent
+
+**Status:** Pending — awaiting human approval in the Autosheet content sheet before rendering. Could not be appended to the sheet this run: Autosheet is still blocked by the `api-billing-free-trial-ended` outage (now 45 consecutive days since 2026-08-30) — needs manual entry once billing is resolved.
