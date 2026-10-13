@@ -1723,3 +1723,40 @@ but still an external dependency on completing Meta's app review before
   instructions. The human still needs to disable this routine at
   https://claude.ai/code/routines or reconfigure it with a new goal/
   deadline; it cannot disable itself.
+- 2026-10-13 (**DEADLINE PASSED — 34 DAYS PAST — routine still firing**):
+  repo was on a **detached HEAD** at run start again, but this time local
+  HEAD and `origin/main` were already equal (0 commits apart either way)
+  — checked out `main` and fast-forward-merged cleanly (a no-op this
+  time, just reattaching the branch ref). The Autosheet
+  `api-billing-free-trial-ended` cutoff logged 2026-08-30 is **still in
+  effect a 47th consecutive run** — the Approved-row read for Part A
+  failed with the byte-for-byte identical error again. Same fix still
+  needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 64-day existence) and Part B
+  step 5 again (today's Pillar 3 draft row couldn't be appended —
+  drafted and committed the file anyway, needs manual sheet entry once
+  billing is fixed). Drafted Pillar 3 (AI Hip-Hop/Influencer Content —
+  a comment-ordered continuation of the 2026-10-08 beat-swap clip,
+  paying off its own comments-decide-the-next-sequence cliffhanger),
+  continuing the established P5→P3→P2→P4→P1→P5→P3 rotation (last Pillar
+  3 was 2026-10-08, last overall pillar was P5 on 2026-10-12).
+  `get_personal_analytics` still returns the same non-empty-but-wrong-
+  platform data flagged 2026-10-05 onward: `total_followers: 36`
+  (`followers_gained: -1`), `recent_videos` still all tagged
+  `platform: "youtube-shorts"` with the same YouTube Shorts titles — a
+  ninth consecutive confirmation this is the sibling YouTube channel,
+  not @the_shedstudio's Instagram. @the_shedstudio's real Instagram
+  follower count remains unverified/unknown 64 days into a (lapsed)
+  30-day goal. This pipeline's own goal deadline (2026-09-09) is now
+  **34 days (one month and five days) in the past**. Per the 2026-10-03
+  standing decision (periodic, roughly-weekly pings rather than daily or
+  fully-suppressed): the last push notification was 2026-10-09, 4 days
+  ago, and nothing qualitatively new happened today (still blocked, still
+  wrong channel, follower count still flat/noise-level at 36) — so no
+  push notification sent this run; logging it here in full and flagging
+  it prominently in this run's own final report per the task
+  instructions. The human still needs to disable this routine at
+  https://claude.ai/code/routines or reconfigure it with a new goal/
+  deadline; it cannot disable itself.
