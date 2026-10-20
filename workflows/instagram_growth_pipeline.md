@@ -1989,3 +1989,42 @@ but still an external dependency on completing Meta's app review before
   The human still needs to disable this routine at
   https://claude.ai/code/routines or reconfigure it with a new goal/
   deadline; it cannot disable itself.
+- 2026-10-20 (**DEADLINE PASSED — 41 DAYS PAST — routine still firing**):
+  repo was already attached to `main` and even with `origin/main` at run
+  start (no detached HEAD, working tree clean). The Autosheet
+  `api-billing-free-trial-ended` cutoff logged 2026-08-30 is **still in
+  effect a 56th consecutive run** — both the Approved-row read for Part A
+  and the Part B row-append attempt failed with the same error again. Same
+  fix still needed (upgrade at
+  https://dashboard.gptforwork.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing).
+  Blocked Part A entirely again (zero videos ever rendered or sent for
+  review across this pipeline's entire 72-day existence) and Part B step 5
+  again (today's Pillar 4 draft row couldn't be appended — drafted and
+  committed the file anyway, needs manual sheet entry once billing is
+  fixed). Checked `openart_model_list` first — unchanged from the
+  2026-10-14 through 2026-10-18 catalog checks, no new video models, but
+  found an existing-and-previously-uncovered capability for the Tool-Drop
+  angle instead: **Smart Shot** (`smart-shot`), which plans a full Shot
+  Plan (reference views, a top-down camera floor plan, storyboard frames,
+  lighting notes) from a scene description via `preview-shot-plan`, or
+  plans-and-renders in one call via `generate-shot-video`. Drafted Pillar 4
+  around it (planning-before-shooting as the hook itself), continuing the
+  established P1→P5→P3→P2→P4 rotation (last Pillar 4 was 2026-10-15).
+  `get_personal_analytics` still returns the same non-empty-but-wrong-
+  platform data flagged 2026-10-05 onward: `total_followers: 36`
+  (`followers_gained: 0`), `recent_videos` still all tagged
+  `platform: "youtube-shorts"` with the same YouTube Shorts titles — a
+  sixteenth consecutive confirmation this is the sibling YouTube channel,
+  not @the_shedstudio's Instagram. @the_shedstudio's real Instagram
+  follower count remains unverified/unknown 72 days into a (lapsed) 30-day
+  goal. This pipeline's own goal deadline (2026-09-09) is now **41 days
+  (one month and twelve days) in the past**. Per the 2026-10-03 standing
+  decision (periodic, roughly-weekly pings rather than daily or
+  fully-suppressed): the last push notification was 2026-10-19, only 1 day
+  ago, and nothing qualitatively new happened today (still blocked, still
+  wrong channel, follower count still flat at 36) — so no push
+  notification sent this run; logging it here in full and flagging it
+  prominently in this run's own final report per the task instructions.
+  The human still needs to disable this routine at
+  https://claude.ai/code/routines or reconfigure it with a new goal/
+  deadline; it cannot disable itself.
