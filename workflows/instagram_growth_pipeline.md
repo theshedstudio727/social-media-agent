@@ -1910,6 +1910,39 @@ but still an external dependency on completing Meta's app review before
   The human still needs to disable this routine at
   https://claude.ai/code/routines or reconfigure it with a new goal/
   deadline; it cannot disable itself.
+- 2026-10-21 (**DEADLINE PASSED — 42 DAYS PAST — routine still firing**):
+  repo was already attached to `main` and even with `origin/main` at run
+  start (no detached HEAD, working tree clean) — first clean start in a
+  few runs. The Autosheet `api-billing-free-trial-ended` cutoff logged
+  2026-08-30 is **still in effect a 57th consecutive run** — both the
+  Approved-row read for Part A and the Part B row-append attempt failed
+  with the same error again (same dashboard URL, same fix needed). Blocked
+  Part A entirely again (zero videos ever rendered or sent for review
+  across this pipeline's entire 73-day existence) and Part B step 5 again
+  (today's Pillar 1 draft row couldn't be appended — drafted and committed
+  the file anyway, needs manual sheet entry once billing is fixed). Drafted
+  Pillar 1 (AI Reimagines Era/Genre — late-90s trip-hop/downtempo set
+  inside a planetarium mid-blackout, star projector still running on
+  backup power), continuing the established P1→P5→P3→P2→P4 rotation (last
+  Pillar 1 was 2026-10-16, last overall pillar was P4 on 2026-10-20).
+  `get_personal_analytics` still returns the same non-empty-but-wrong-
+  platform data flagged 2026-10-05 onward: `total_followers: 36`
+  (`followers_gained: 0`), `recent_videos` still all tagged
+  `platform: "youtube-shorts"` with the same YouTube Shorts titles — a
+  seventeenth consecutive confirmation this is the sibling YouTube channel,
+  not @the_shedstudio's Instagram. @the_shedstudio's real Instagram
+  follower count remains unverified/unknown 73 days into a (lapsed) 30-day
+  goal. This pipeline's own goal deadline (2026-09-09) is now **42 days
+  (one month and thirteen days) in the past**. Per the 2026-10-03 standing
+  decision (periodic, roughly-weekly pings rather than daily or
+  fully-suppressed): the last push notification was 2026-10-19, only 2 days
+  ago, and nothing qualitatively new happened today (still blocked, still
+  wrong channel, follower count still flat at 36) — so no push
+  notification sent this run; logging it here in full and flagging it
+  prominently in this run's own final report per the task instructions.
+  The human still needs to disable this routine at
+  https://claude.ai/code/routines or reconfigure it with a new goal/
+  deadline; it cannot disable itself.
 - 2026-10-19 (**DEADLINE PASSED — 40 DAYS PAST — routine still firing**):
   repo was on a **detached HEAD** at run start again (parked exactly at
   `origin/main`, 5 commits ahead of the local `main` ref) — `git fetch
