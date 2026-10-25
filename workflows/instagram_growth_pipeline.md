@@ -2174,3 +2174,53 @@ but still an external dependency on completing Meta's app review before
   The human still needs to disable this routine at
   https://claude.ai/code/routines or reconfigure it with a new goal/
   deadline; it cannot disable itself.
+- 2026-10-25 (**DEADLINE PASSED — 46 DAYS PAST — routine still firing**):
+  repo was again on a **detached HEAD** at run start (parked exactly at
+  `origin/main`, 1 commit ahead of the local `main` ref — the same
+  stale-local-pointer pattern as every run this month); `git fetch origin
+  main && git checkout main && git merge --ff-only origin/main`
+  fast-forwarded cleanly, nothing lost. The Autosheet
+  `api-billing-free-trial-ended` cutoff logged 2026-08-30 is **still in
+  effect a 61st consecutive run** — both the Approved-row read for Part A
+  and the Part B row-append attempt (via `autosheet_follow_up_agent` on
+  the same still-`available` agent session from 2026-08-30) failed with
+  the identical error, same `dashboard.autosheet.com` billing URL, same
+  space ID. Blocked Part A entirely again (zero videos ever rendered or
+  sent for review across this pipeline's entire 77-day existence) and
+  Part B step 5 again (today's Pillar 4 draft row couldn't be appended —
+  drafted and committed the file anyway, needs manual sheet entry once
+  billing is fixed). Checked `openart_model_list` first — unchanged from
+  the 2026-10-18/20/23 catalog checks, no new video models, but picked an
+  existing-and-previously-uncovered angle for the Tool-Drop slot: **Wan
+  3.0**'s native 30-second single-pass render (no stitching needed for a
+  continuous take), distinct from this pillar's prior Smart Shot (10-20),
+  Grok Imagine 1.5 (10-15/09-04), Seedance 2.5 Draft (10-10/08-25), and
+  MiniMax H3 (10-05) angles. Drafted Pillar 4 accordingly, continuing the
+  established P1→P5→P3→P2→P4 rotation (last Pillar 4 was 2026-10-20, last
+  overall pillar was P2 on 2026-10-24). `get_personal_analytics` still
+  returns the same non-empty-but-wrong-platform data flagged 2026-10-05
+  onward: `total_followers: 36` (`followers_gained: 0`), `recent_videos`
+  still all tagged `platform: "youtube-shorts"` with the same "Retro
+  Rewind" / Vietnamese-instrument YouTube Shorts titles — a
+  twenty-first consecutive confirmation this is the sibling YouTube
+  channel, not @the_shedstudio's Instagram. @the_shedstudio's real
+  Instagram follower count remains unverified/unknown 77 days into a
+  (lapsed) 30-day goal. This pipeline's own goal deadline (2026-09-09) is
+  now **46 days (one month and seventeen days) in the past**. A push
+  notification was already sent earlier this run, only 1 day after the
+  2026-10-24 push, which breaks the 2026-10-03 standing decision's
+  roughly-weekly cadence; no qualitatively new information emerged today
+  (same billing block, same wrong channel, same flat 36 count) to justify
+  sending early, so future runs should revert to strictly roughly-weekly
+  pushes (next one due around 2026-11-01 if nothing changes before then)
+  rather than firing on every run. Flagging the deadline prominently in
+  this run's own final report per the task instructions regardless. The
+  human still needs to disable this routine at
+  https://claude.ai/code/routines or reconfigure it with a new goal/
+  deadline; it cannot disable itself. Given 61 consecutive blocked runs
+  and 21 consecutive wrong-channel analytics confirmations with zero new
+  information in either, this log is also growing unsustainably (2176+
+  lines before this entry, almost entirely repeated boilerplate) — worth
+  the human's attention as its own item: either disable the routine, fix
+  the two blockers, or ask for the log to be condensed into a single
+  running status block instead of a new ~35-line entry per day.

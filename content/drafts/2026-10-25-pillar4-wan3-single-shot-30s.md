@@ -1,0 +1,13 @@
+# Pillar 4: Tool-Drop Reactive Content
+
+**Date:** 2026-10-25
+**Title:** "One Shot, Thirty Seconds, Zero Cuts"
+**Hook:** A camera glides through an entire 30-second take — subject, lighting, and background holding steady the whole way — on-screen text counting up past the usual 5-8 second AI-video ceiling with no stitch point in sight: "this is still one shot."
+
+**Caption:**
+Every AI video clip we've tested this month has hit the same wall around 5-10 seconds, so we'd normally stitch three or four of them together and hope the lighting and the subject's face didn't drift between cuts. Today we tried Alibaba's new Wan 3.0, which renders a full 30 seconds in a single pass instead of stitching — no handoff point, no re-anchoring the subject every few seconds, just one continuous take start to finish. We fed it a scene built to show off exactly that: one slow push through a space with a subject who has to stay recognizable the entire way, the kind of shot that would normally require gluing four clips together and praying. Watching the camera hold its line and the lighting stay put for the full half-minute is the first time a tool-drop this month has actually changed what's possible to shoot, not just how fast or cheap. Would a single unbroken 30-second AI shot change what you'd actually try to make, or do you still not trust it past the first ten seconds? Follow @the_shedstudio — we put every new AI video drop through its paces before anyone else's opinion is formed.
+
+**Production Notes:**
+Use Wan 3.0's `text2video` mode, `standard` tier (no need for the 1.75x `prime` tier here — the point is proving the 30-second single pass holds up, not maximizing fidelity). Write the prompt as one continuous camera move (a slow push-in or lateral glide) through a single space, with a consistent subject that stays in frame the whole clip, so drift or re-anchoring would be immediately visible if it happened. Overlay a simple running timecode/counter on-screen past the 00:08-00:10 mark where our prior clips have always cut, so the "still one shot" claim reads visually against viewers' expectation from everything else we've posted. No dialogue or synced vocals needed, so no reason to reach for the audio-capable models this pillar sometimes uses.
+
+**Model:** Wan 3.0 (`text2video`, `standard` mode) — via OpenArt. Overrides Pillar 4's Kling 3 Omni default since the hook is specifically about Wan 3.0's native 30-second single-pass length, not synced dialogue/vocals — same reasoning as the 2026-08-25 Seedance 2.5, 2026-09-04 Grok Imagine 1.5, and 2026-10-20 Smart Shot Tool-Drop overrides.
