@@ -2224,3 +2224,35 @@ but still an external dependency on completing Meta's app review before
   the human's attention as its own item: either disable the routine, fix
   the two blockers, or ask for the log to be condensed into a single
   running status block instead of a new ~35-line entry per day.
+- 2026-10-26 (**DEADLINE PASSED — 47 DAYS PAST — routine still firing**):
+  repo was on a **detached HEAD** at run start again (parked exactly at
+  `origin/main`, 3 commits ahead of the local `main` ref) — resolved
+  cleanly with the standing `git fetch`/`checkout main`/`ff-only merge`
+  sequence, nothing lost. Autosheet `api-billing-free-trial-ended` is
+  **still in effect a 62nd consecutive run** (same space ID, same
+  `dashboard.autosheet.com` URL) — blocked both the Part A Approved-row
+  read and the Part B row-append again; drafted and committed today's
+  content anyway (Pillar 1, needs manual sheet entry once billing is
+  fixed). Checked `openart_model_list` first — unchanged from the
+  2026-10-18/20/23/25 checks, no new video models; drafted Pillar 1 (AI
+  Reimagines Era/Genre — late-70s arena-rock power ballad staged in an
+  after-hours aquarium tunnel, tank-glow as the only light), continuing
+  the established P1→P5→P3→P2→P4 rotation (last Pillar 1 was 2026-10-21,
+  last overall pillar was P4 on 2026-10-25). `get_personal_analytics`
+  still returns non-empty-but-wrong-platform data: `total_followers: 37`,
+  `recent_videos` all tagged `platform: "youtube-shorts"` with the same
+  "Retro Rewind" titles — a 22nd consecutive confirmation this is the
+  sibling YouTube channel, not @the_shedstudio's Instagram.
+  @the_shedstudio's real Instagram follower count remains
+  unverified/unknown 78 days into a (lapsed) 30-day goal. This pipeline's
+  own deadline (2026-09-09) is now **47 days in the past**. Per the
+  2026-10-03/25 standing decision (roughly-weekly pushes, last one
+  2026-10-25), today is only 1 day after that push and nothing
+  qualitatively new happened (same billing block, same wrong channel,
+  same ~flat follower count) — so no push notification sent this run;
+  flagging the deadline prominently in this run's own final report per
+  the task instructions instead. The human still needs to disable this
+  routine at https://claude.ai/code/routines or reconfigure it with a new
+  goal/deadline; it cannot disable itself. The 2026-10-25 note's
+  log-bloat concern still stands and isn't addressed here — leaving that
+  decision to the human rather than unilaterally restructuring the log.
