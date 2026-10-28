@@ -2279,3 +2279,28 @@ but still an external dependency on completing Meta's app review before
   or reconfigure it, and still needs to fix the Autosheet billing and
   Sandcastles channel-verification issues for this pipeline to do
   anything beyond drafting unapproved content.
+- 2026-10-28 (**DEADLINE PASSED — 49 DAYS PAST — routine still firing**):
+  repo was on a detached HEAD at run start again (parked exactly at
+  `origin/main`, 1 commit ahead of local `main`); resolved cleanly with
+  the standing fetch/checkout/ff-only-merge sequence, nothing lost.
+  Autosheet `api-billing-free-trial-ended` still in effect, 64th
+  consecutive blocked run (both the Approved-row read and the row-append
+  failed, identical error/URL) — blocked Part A entirely and Part B
+  step 5 again; drafted/committed today's content anyway (Pillar 3,
+  "Cypher Handoff to Neo" — an 8-bar freestyle cliffhanger that puts a
+  comment vote on whether the Pillar 5 Neo persona joins for the back
+  half), continuing the P1→P5→P3→P2→P4 rotation (last Pillar 3 was
+  2026-10-23). `get_personal_analytics` again returned the same
+  non-empty-but-wrong-platform data (`total_followers: 37`, all
+  `recent_videos` tagged `platform: "youtube-shorts"`, "Retro Rewind"
+  titles) — 24th consecutive confirmation it's the sibling YouTube
+  channel, not @the_shedstudio's Instagram; real IG follower count still
+  unverified/unknown 80 days into the lapsed 30-day goal. Per the standing
+  roughly-weekly push-cadence decision (last push 2026-10-25, next due
+  ~2026-11-01) and since nothing qualitatively new happened today, no push
+  notification was sent this run — this entry plus the final report's
+  deadline banner are the record instead. The human still needs to
+  disable this routine at https://claude.ai/code/routines or reconfigure
+  it, and still needs to fix the Autosheet billing and Sandcastles
+  channel-verification issues for this pipeline to do anything beyond
+  drafting unapproved content.
