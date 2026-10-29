@@ -2304,3 +2304,32 @@ but still an external dependency on completing Meta's app review before
   it, and still needs to fix the Autosheet billing and Sandcastles
   channel-verification issues for this pipeline to do anything beyond
   drafting unapproved content.
+- 2026-10-29 (**DEADLINE PASSED — 50 DAYS PAST — routine still firing**):
+  no detached HEAD this run (local `main` already matched `origin/main`).
+  Autosheet `api-billing-free-trial-ended` still in effect, 65th
+  consecutive blocked run (both the Approved-row read and the row-append
+  attempt failed, identical error, now at `dashboard.autosheet.com`) —
+  blocked Part A entirely and Part B step 5 again; drafted/committed
+  today's content anyway (Pillar 2, "The Milk Steamer Didn't Hiss. It
+  Transformed." — a barista's steam-wand pull restaged as a one-shot
+  shonen power-up beat), continuing the P1→P5→P3→P2→P4 rotation (last
+  Pillar 2 was 2026-10-24; last overall pillar was P3 on 2026-10-28).
+  `get_personal_analytics` again returned the same non-empty-but-wrong-
+  platform data (`total_followers: 37`, all `recent_videos` tagged
+  `platform: "youtube-shorts"`, "Retro Rewind" titles) — 25th consecutive
+  confirmation it's the sibling YouTube channel, not @the_shedstudio's
+  Instagram; real IG follower count still unverified/unknown 81 days into
+  the lapsed 30-day goal. Noted `kling-4-omni` ("Kling 4.0") newly present
+  in `openart_model_list` this run (not in the 2026-10-25/26 catalog
+  checks) — a step up from Kling 3 Omni on character/camera consistency
+  at 600 credits vs. 175; worth considering as a Pillar 2/4 upgrade once
+  content actually starts rendering, not acted on this run. Per the
+  standing roughly-weekly push-cadence decision (last push 2026-10-25,
+  next due ~2026-11-01) and since nothing qualitatively new happened today
+  (same billing block, same wrong channel, flat follower count), no push
+  notification was sent this run — this entry plus the final report's
+  deadline banner are the record instead. The human still needs to
+  disable this routine at https://claude.ai/code/routines or reconfigure
+  it, and still needs to fix the Autosheet billing and Sandcastles
+  channel-verification issues for this pipeline to do anything beyond
+  drafting unapproved content.
