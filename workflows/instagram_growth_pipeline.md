@@ -2392,3 +2392,25 @@ but still an external dependency on completing Meta's app review before
   needs to fix the Autosheet billing and Sandcastles channel-verification
   issues for this pipeline to do
   anything beyond drafting unapproved content.
+- 2026-11-01 (**DEADLINE PASSED — 53 DAYS PAST — routine still firing**):
+  Autosheet `api-billing-free-trial-ended` still in effect, 68th
+  consecutive blocked run — blocked both the Approved-row read (Part A)
+  and the new-row append (Part B step 5) with the identical error;
+  drafted and committed today's content anyway, needs manual sheet
+  entry once billing is fixed. Drafted Pillar 5 (Neo, episode fifteen —
+  resolves the episode-fourteen crowd-reaction vote), continuing the
+  P5→P3→P2→P4→P1 rotation (last Pillar 5 was 2026-10-27).
+  `get_personal_analytics` again returned the same non-empty-but-wrong-
+  platform data (`total_followers: 37`, all `recent_videos` tagged
+  `platform: "youtube-shorts"`, "Retro Rewind" titles, channel started
+  2026-10-05) — 28th consecutive confirmation it's the sibling YouTube
+  channel, not @the_shedstudio's Instagram; real IG follower count still
+  unverified/unknown, now 84 days into the lapsed 30-day goal (goal
+  deadline 2026-09-09 is 53 days behind today). Per the standing
+  roughly-weekly push-cadence decision (last push 2026-10-25, due again
+  ~2026-11-01), a push notification was sent this run flagging the
+  deadline and the unchanged blockers. The human still needs to disable
+  this routine at https://claude.ai/code/routines or reconfigure it, and
+  still needs to fix the Autosheet billing and Sandcastles
+  channel-verification issues for this pipeline to do anything beyond
+  drafting unapproved content.

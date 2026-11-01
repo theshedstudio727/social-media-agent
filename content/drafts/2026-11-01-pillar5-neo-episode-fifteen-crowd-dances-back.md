@@ -1,0 +1,15 @@
+# 2026-11-01 — Pillar 5: AI Dance/Character
+
+**Title:** Neo, Episode Fifteen — Someone In The Crowd Dances Back
+
+**Hook (first 1-2 seconds):** She's mid-combo in the night market from episode fourteen when one bystander peels off from the crowd and starts mirroring her, half a beat behind, and for the first time in fifteen episodes she turns to actually look at someone instead of the camera.
+
+**Caption:**
+Episode fourteen ended on the question that's been sitting since the very first rooftop: now that she's not alone anymore, does someone in the crowd finally move with her? You picked "let someone dance back," so episode fifteen gives you exactly that — a single stranger breaks formation, catches her rhythm, and for a few seconds this solo series isn't solo. It's a small shift on paper (one extra figure, four extra bars of choreography) but it changes what the whole thing has been about: fourteen episodes of a character performing into the void, and the first time anything performs back. We kept her untouched — same coat, same silver hair, same refusal to acknowledge the camera — because the point was never her changing, it's the world finally catching up to her. Does this stranger follow her to the next location, or was this a one-episode cameo? Comment your vote. Follow @the_shedstudio to see who shows up in episode sixteen.
+
+**Production Notes:**
+Fifteenth installment of the recurring Neo character (debut rooftop 2026-08-11, return rooftop 2026-08-27, subway platform 2026-09-01, skybridge crossing 2026-09-06, rooftop garden 2026-09-11, greenhouse dome 2026-09-16, storm departure 2026-09-21, underground vault 2026-09-26, vault release 2026-10-01, mirror-floor recap/audience-vote setup 2026-10-07, rooftop bookend/vote resolution part one 2026-10-12, new-skyline vote resolution part two 2026-10-17, skyline-launch vote setup 2026-10-22, night-market landing/first bystanders 2026-10-27) — same original, non-infringing AI-generated persona throughout (silver hair, glowing cyberpunk outfit, same coat since debut), no real performer/likeness involved, satisfies the copyright/likeness guardrail. This episode resolves the episode-fourteen vote by having one generic, stylized crowd silhouette (no identifiable real person, same guardrail as the 10-27 crowd scene) break off and mirror her choreography for a few bars, the first reciprocal movement in the series. Sets up the next fork for episode sixteen: does the mirroring stranger recur, or was it a one-off. Silent render; add a licensed/trending audio track in final edit before posting, per standing practice for silent PixVerse renders. Reference prior Neo stills for costume/character continuity.
+
+**Model:** PixVerse V6, text2video (or image2video off a saved Neo reference still for character continuity), 9:16, silent
+
+**Status:** Pending — awaiting human approval in the Autosheet content sheet before rendering. Autosheet append attempted this run and blocked again by the `api-billing-free-trial-ended` outage (confirmed live, 2026-11-01) — needs manual entry once billing is resolved.
