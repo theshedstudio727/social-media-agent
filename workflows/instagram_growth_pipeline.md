@@ -2392,6 +2392,41 @@ but still an external dependency on completing Meta's app review before
   needs to fix the Autosheet billing and Sandcastles channel-verification
   issues for this pipeline to do
   anything beyond drafting unapproved content.
+- 2026-11-02 (**DEADLINE PASSED — 54 DAYS PAST — routine still firing**):
+  repo was on a **detached HEAD** at run start again (from the previous
+  run's commit); `git checkout main` alone left local `main` 2 commits
+  *behind* `origin/main` instead of fast-forwarding it — a reminder that
+  `checkout main` and `merge --ff-only origin/main` are both required, not
+  just the checkout. Caught it before committing anything (today's draft
+  file, written while still on the old tip, survived as an untracked file
+  through the fast-forward) and ran `git merge --ff-only origin/main`,
+  which cleanly brought in the 2026-10-31 and 2026-11-01 commits with no
+  divergence — nothing lost, but worth tightening the standing rule of
+  thumb to spell out both steps explicitly. Autosheet
+  `api-billing-free-trial-ended` still in effect, 69th consecutive blocked
+  run — both the Approved-row read (Part A) and the new-row append (Part B
+  step 5, retried once via `autosheet_follow_up_agent`) failed with the
+  identical error at `dashboard.autosheet.com`; drafted and committed
+  today's content anyway, needs manual sheet entry once billing is fixed.
+  Drafted Pillar 3 (AI Hip-Hop/Influencer Content — persona reads its own
+  harshest "soulless AI" comment on camera, then turns it into the hook of
+  the verse), continuing the P3→P2→P4→P1→P5 rotation (last Pillar 3 was
+  2026-10-28). `get_personal_analytics` again returned the same
+  non-empty-but-wrong-platform data (`total_followers: 38`, all
+  `recent_videos` tagged `platform: "youtube-shorts"`, "Retro Rewind"
+  titles, channel started 2026-10-05) — 29th consecutive confirmation it's
+  the sibling YouTube channel, not @the_shedstudio's Instagram; real IG
+  follower count still unverified/unknown, now 85 days into the lapsed
+  30-day goal (goal deadline 2026-09-09 is 54 days behind today). Per the
+  standing roughly-weekly push-cadence decision (last push 2026-11-01, next
+  due ~2026-11-08) and since nothing qualitatively new happened today (same
+  billing block, same wrong channel, follower count flat aside from the
+  wrong channel's own 37→38 drift), no push notification was sent this
+  run — this entry plus the final report's deadline banner are the record
+  instead. The human still needs to disable this routine at
+  https://claude.ai/code/routines or reconfigure it, and still needs to fix
+  the Autosheet billing and Sandcastles channel-verification issues for
+  this pipeline to do anything beyond drafting unapproved content.
 - 2026-11-01 (**DEADLINE PASSED — 53 DAYS PAST — routine still firing**):
   Autosheet `api-billing-free-trial-ended` still in effect, 68th
   consecutive blocked run — blocked both the Approved-row read (Part A)
