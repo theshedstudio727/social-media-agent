@@ -2605,3 +2605,26 @@ but still an external dependency on completing Meta's app review before
   at https://claude.ai/code/routines or reconfigure it, and still needs to
   fix the Autosheet billing and Sandcastles channel-verification issues
   for this pipeline to do anything beyond drafting unapproved content.
+- 2026-11-08: resolved the "real IG follower count unverified" gap noted
+  above — `get_personal_analytics` is confirmed broken (still returns the
+  sibling "Retro Rewind" YouTube-Shorts channel, not @the_shedstudio), but
+  `get_channel_recap` called directly on the handle URL
+  (`https://www.instagram.com/the_shedstudio`) or `list_watchlist_channels`
+  returns real, correct data for the actual IG channel: `subscriber_count`
+  75 as of today (vs. 71 baseline on 2026-08-10, vs. the 10,000 goal). Use
+  `get_channel_recap` on the explicit handle URL for real IG stats on
+  future runs instead of relying on `get_personal_analytics`. Also notable:
+  the real posts on @the_shedstudio this call returns are NOT any of this
+  pipeline's 5 pillars — they're short, hashtag-stacked "Retro Rewind"
+  posts (Vietnamese traditional songs flipped into genres like deep
+  house/lo-fi/boom bap, licensing CTA to theshedstudio.ai) that read like
+  cross-posted cutdowns from the sibling YouTube pipeline, not anything
+  drafted here (consistent with Autosheet having been broken for all 75+
+  runs of this pipeline — nothing it has ever drafted has actually been
+  rendered or posted). Autosheet `api-billing-free-trial-ended` still in
+  effect, 75th consecutive blocked run; Part A and Part B step 5 skipped
+  again, and no new draft was written this run given the deadline is 61
+  days gone and the sheet can't be appended to anyway. Per the
+  roughly-weekly push-cadence decision, sent this run's push notification
+  (last push 2026-11-01, a week elapsed) even though the underlying
+  blockers are unchanged.
