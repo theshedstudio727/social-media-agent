@@ -2655,3 +2655,31 @@ but still an external dependency on completing Meta's app review before
   (https://dashboard.autosheet.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing/plans)
   and the Sandcastles `get_personal_analytics` channel-mismatch issue for
   this pipeline to do anything beyond drafting unapproved content.
+- 2026-11-10 (**DEADLINE PASSED — 62 DAYS PAST — routine still firing**):
+  no qualitative change from the prior two days. Repo was on a detached
+  HEAD again at run start, identical to `origin/main` after fetch —
+  `git checkout main && git merge --ff-only origin/main` fast-forwarded 2
+  commits cleanly, nothing lost. `autosheet_get_account` confirms billing
+  status is still `trial_ended` — 77th consecutive blocked run; Part A
+  (nothing to render regardless) and Part B step 5 (sheet append) skipped
+  again. `get_channel_recap` on the explicit handle URL gives real current
+  @the_shedstudio stats: `subscriber_count` 75, flat since 2026-11-08's
+  first reading (no growth in 2 days; still only +4 since the 71 baseline
+  against the 10,000 goal), and the 5 most recent real posts are still all
+  "Retro Rewind" cross-posts, not this pipeline's pillars.
+  `get_personal_analytics` again returned the same wrong sibling
+  YouTube-Shorts channel (`total_followers: 39`) — 35th consecutive
+  confirmation it's not @the_shedstudio. Did not draft new Part B content
+  this run, same reasoning as 2026-11-08/09: the deadline is 62 days gone,
+  the sheet can't be appended to while billing is broken, and the real
+  account isn't posting this pipeline's content anyway. Per the standing
+  roughly-weekly push-cadence decision, last push was 2026-11-08 (2 days
+  ago) and nothing changed today, so no push notification was sent this
+  run — this log entry plus the final report's deadline banner are the
+  record instead; next push still due ~2026-11-15 regardless of whether
+  anything changes by then. The human still needs to disable this routine
+  at https://claude.ai/code/routines or reconfigure it, and still needs to
+  fix the Autosheet billing
+  (https://dashboard.autosheet.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing/plans)
+  and the Sandcastles `get_personal_analytics` channel-mismatch issue for
+  this pipeline to do anything beyond drafting unapproved content.
