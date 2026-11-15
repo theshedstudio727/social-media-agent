@@ -2794,3 +2794,28 @@ but still an external dependency on completing Meta's app review before
   (https://dashboard.autosheet.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing/plans)
   and the Sandcastles `get_personal_analytics` channel-mismatch issue for
   this pipeline to do anything beyond drafting unapproved content.
+- 2026-11-15 (**DEADLINE PASSED — 67 DAYS PAST — routine still firing**):
+  repo was on a detached HEAD at run start again, identical to
+  `origin/main` after fetch — `git checkout main && git merge --ff-only
+  origin/main` fast-forwarded 2 commits cleanly, nothing lost.
+  `autosheet_get_account` confirms billing status is still `trial_ended` —
+  82nd consecutive blocked run; Part A (nothing to render regardless) and
+  Part B step 5 (sheet append) skipped again. `get_channel_recap` on the
+  explicit handle URL gives real current @the_shedstudio stats:
+  `subscriber_count` 76, flat vs. yesterday's reading (+5 since the 71
+  baseline against the 10,000 goal), and the 5 most recent real posts are
+  still all "Retro Rewind" cross-posts from the sibling YouTube pipeline,
+  not this pipeline's pillars. `get_personal_analytics` again returned the
+  same wrong sibling YouTube-Shorts channel (`total_followers: 40`) — 40th
+  consecutive confirmation it's not @the_shedstudio. Did not draft new
+  Part B content this run, same reasoning as 2026-11-08 through 11-14: the
+  deadline is 67 days gone, the sheet can't be appended to while billing is
+  broken, and the real account isn't posting this pipeline's content
+  anyway. Per the standing roughly-weekly push-cadence decision, last push
+  was 2026-11-08 (7 days ago) and a push was due ~today regardless of
+  material change, so a push notification was sent this run. The human
+  still needs to disable this routine at https://claude.ai/code/routines or
+  reconfigure it, and still needs to fix the Autosheet billing
+  (https://dashboard.autosheet.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing/plans)
+  and the Sandcastles `get_personal_analytics` channel-mismatch issue for
+  this pipeline to do anything beyond drafting unapproved content.
