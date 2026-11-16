@@ -2819,3 +2819,35 @@ but still an external dependency on completing Meta's app review before
   (https://dashboard.autosheet.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing/plans)
   and the Sandcastles `get_personal_analytics` channel-mismatch issue for
   this pipeline to do anything beyond drafting unapproved content.
+- 2026-11-16 (**DEADLINE PASSED — 68 DAYS PAST — routine still firing**):
+  repo was on a detached HEAD at run start again, identical to
+  `origin/main` after fetch — `git checkout main && git merge --ff-only
+  origin/main` fast-forwarded 3 commits cleanly, nothing lost.
+  `autosheet_get_account` confirms billing status is still `trial_ended` —
+  83rd consecutive blocked run; skipped attempting an actual
+  `autosheet_start_agent_google_sheets_spreadsheet`/`follow_up_agent` call
+  this run since the free `autosheet_get_account` check already gives an
+  authoritative, unambiguous answer and a paid agent-turn call would just
+  fail the same way it has 83 times running — no reason to spend a credit
+  on a predictable failure. Part A (nothing to render regardless) and
+  Part B step 5 (sheet append) skipped again as a result. `get_channel_recap`
+  on the explicit handle URL gives real current @the_shedstudio stats:
+  `subscriber_count` 76, flat vs. yesterday's reading (+5 since the 71
+  baseline against the 10,000 goal), and 0 videos in the last 14 days —
+  the real account still isn't posting this pipeline's content at all.
+  `get_personal_analytics` again returned the same wrong sibling
+  YouTube-Shorts channel (`total_followers: 40`) — 41st consecutive
+  confirmation it's not @the_shedstudio. Did not draft new Part B content
+  this run, same reasoning as 2026-11-08 onward: the deadline is 68 days
+  gone, the sheet can't be appended to while billing is broken, and the
+  real account isn't posting this pipeline's content anyway. Per the
+  standing roughly-weekly push-cadence decision, last push was 2026-11-15
+  (1 day ago) and nothing materially changed today (billing still blocked,
+  analytics still wrong-channel, follower count flat at 76), so no push
+  notification was sent this run; next push due ~2026-11-22 regardless of
+  whether anything changes by then. The human still needs to disable this
+  routine at https://claude.ai/code/routines or reconfigure it, and still
+  needs to fix the Autosheet billing
+  (https://dashboard.autosheet.com/space/e0f81b59-dc6f-43a6-86b7-e6ff7a496f98/settings/billing/plans)
+  and the Sandcastles `get_personal_analytics` channel-mismatch issue for
+  this pipeline to do anything beyond drafting unapproved content.
