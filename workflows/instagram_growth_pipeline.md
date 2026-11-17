@@ -2852,8 +2852,9 @@ but still an external dependency on completing Meta's app review before
   and the Sandcastles `get_personal_analytics` channel-mismatch issue for
   this pipeline to do anything beyond drafting unapproved content.
 - 2026-11-17 (**DEADLINE PASSED — 69 DAYS PAST — routine still firing**):
-  repo was already attached to `main` and even with `origin/main` at run
-  start (no detached HEAD, working tree clean). `autosheet_get_account`
+  repo was on a detached HEAD at run start again, identical to
+  `origin/main` after fetch — reattached `main` to it and fast-forwarded
+  cleanly, nothing lost. `autosheet_get_account`
   confirms billing status is still `trial_ended` — 84th consecutive
   blocked run; skipped the paid agent-turn call again per the 2026-11-16
   reasoning (the free account check is already authoritative). Part A
